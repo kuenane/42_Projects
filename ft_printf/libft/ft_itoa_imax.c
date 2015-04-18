@@ -1,0 +1,52 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa_imax.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/01/10 08:26:56 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/01/20 08:08:22 by wide-aze         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <libft.h>
+#include <stdlib.h>
+
+static int	ft_nb_digit(intmax_t n)
+{
+	int		i;
+
+	if (n == 0)
+		return (1);
+	i = 0;
+	while (n)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
+}
+
+char		*ft_itoa_imax(intmax_t n)
+{
+	int		nb_digit;
+	char	*str;
+
+	if (n < -9223372036854775807)
+		return (ft_strdup("-9223372036854775808"));
+	nb_digit = ft_nb_digit(n);
+	str = ft_strnew(nb_digit);
+	if (str == NULL)
+		return (NULL);
+	nb_digit--;
+	while (nb_digit >= 0)
+	{
+		if (str[nb_digit] == '-')
+			return (str);
+		str[nb_digit] = (n % 10) + 48;
+		n = n / 10;
+		nb_digit--;
+	}
+	return (str);
+}

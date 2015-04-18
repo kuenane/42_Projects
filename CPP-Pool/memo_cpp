@@ -1,0 +1,29 @@
+namespace toto {}				define a namespace
+
+static var/function				non-member (in relation only with class and not with the instance) 
+
+std::isstream					string stream
+std::ifstream					input file stream
+std::ofstream					output file stream
+ifs.open()/.close()				open/close
+
+construct + by copy + destruc + op=		COPLIEN FORM
+
+virtual							use real type
+
+static_cast<type>(var)			adapt the bits (NULL/bad_cast if cannot)
+reinterpret_cast<type>(var)		do the cast stupidly (completly unsafe...)
+dynamic_cast<type>(var)			= do at execution (!= compilation)  catch bad_cast
+const_cast<type>(var)			set/unset const
+
+operator=						cpy the class specified to this
+operator type()					return a type var from this
+
+template<typename T>			define a template (type T is like typedef)(T = int mean if nothing specified, use int)
+name<type>(param)				template call (like cast)
+specialization					possibility to specialize it (replace all occurance with the type)
+::ft							call template function
+std::list<int>					STL are template
+
+containers contigus	(sequences): vector deque list stack queue priority_queue
+containers associatifs (eparpilles): set multiset map multimap 

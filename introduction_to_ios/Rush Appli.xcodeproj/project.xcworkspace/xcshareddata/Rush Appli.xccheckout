@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CF4CB016-FEFB-4E7F-B120-3FB41BC2DB59</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rush Appli</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>729E4483379A1B666C66D950E50FAAEFC98ECE66</key>
+		<string>vogsphere.42.fr:intra/2014/activities/rush_introduction_to_ios/wide-aze</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wide-aze/Rush Appli.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>729E4483379A1B666C66D950E50FAAEFC98ECE66</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>vogsphere.42.fr:intra/2014/activities/rush_introduction_to_ios/wide-aze</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>729E4483379A1B666C66D950E50FAAEFC98ECE66</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>729E4483379A1B666C66D950E50FAAEFC98ECE66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wide-aze</string>
+		</dict>
+	</array>
+</dict>
+</plist>
