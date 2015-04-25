@@ -1,0 +1,21 @@
+;******************************************************************************;
+;                                                                              ;
+;                                                         :::      ::::::::    ;
+;    .emacs                                             :+:      :+:    :+:    ;
+;                                                     +:+ +:+         +:+      ;
+;    By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+         ;
+;                                                 +#+#+#+#+#+   +#+            ;
+;    Created: 2015/02/09 15:34:40 by wide-aze          #+#    #+#              ;
+;    Updated: 2015/02/12 07:41:19 by wide-aze         ###   ########.fr        ;
+;                                                                              ;
+;******************************************************************************;
+
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode t)
+(setq-default c-basic-offset 4)
+(setq-default c-default-style "linux")
+
+(setq line-number-mode t)
+(setq column-number-mode t)
+
+(c-set-offset 'innamespace 0)
