@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/02/21 17:47:00 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/05/03 11:32:28 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,5 +139,6 @@ void				v_free(void *tofree);
 void				ft_putstrtab(char **tab, char *delimiter, char *ender);
 char				**ft_strtabnew(size_t size);
 char				**v_strtabnew(size_t size);
+void				ft_strtolower(char *s);
 
 #endif

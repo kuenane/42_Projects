@@ -18,7 +18,8 @@ C_FILES = ft_atoi.c ft_memalloc.c ft_putchar.c ft_strcat.c ft_striter.c\
  convert_ui_to_other.c convert_ul_to_other.c convert_ull_to_other.c\
  ft_strjoin_free_s2.c ft_itoa_st.c convert_st_to_other.c swap_two_int.c\
  ft_exit.c ft_str_isdigit.c add_str_strtab.c del_str_strtab.c ft_strlen_strtab.c\
- ft_malloc.c swap_two_str.c ft_free.c v_free.c ft_putstrtab.c ft_strtabnew.c
+ ft_malloc.c swap_two_str.c ft_free.c v_free.c ft_putstrtab.c ft_strtabnew.c\
+ ft_strtolower.c
 
 O_FILES = $(C_FILES:.c=.o)
 
