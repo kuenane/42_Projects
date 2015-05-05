@@ -136,5 +136,12 @@ int					str_is_digit(char *str);
 void				swap_two_str(char **s1, char **s2);
 void				ft_free(void *tofree);
 void				v_free(void *tofree);
+char				**cp_env_tab(char **env);
+int					ft_random(int min, int max);
+void				ft_quicksort_int(int *tab, int start, int end);
+void				ft_quicksort_int_dsc(int *tab, int start, int end);
+void				ft_quicksort_str(char **tab, int start, int end);
+void				ft_quicksort_str_dsc(char **tab, int start, int end);
+void				ft_srand(void);
 
 #endif
