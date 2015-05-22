@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/05/13 08:18:51 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/05/22 14:51:37 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 # include <stddef.h>
 
+typedef int BOOL;
+# define TRUE 1
+# define FALSE 0
 # define GNL_BSIZE 32
 
 typedef struct		s_rdgnl
