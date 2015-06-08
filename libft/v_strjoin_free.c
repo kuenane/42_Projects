@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   v_strjoin_free.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 09:50:56 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/08 15:50:07 by wide-aze         ###   ########.fr       */
+/*   Created: 2014/12/09 09:44:22 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/07 15:19:07 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	ft_putnbr_fd(int n, int fd)
+char	*v_strjoin_free(char *s1, char *s2, int frees1, int frees2)
 {
-	char	*tmp;
+	char	*str;
 
-	tmp = ft_itoa(n);
-	ft_putstr_fd(tmp, fd);
-	ft_free(tmp);
+	str = v_strjoin(s1, s2);
+	if (frees1)
+		ft_free (s1);
+	if (frees2)
+		ft_free (s2);
+	return (str);
 }

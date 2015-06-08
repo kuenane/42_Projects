@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_col.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 09:50:56 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/08 15:50:07 by wide-aze         ###   ########.fr       */
+/*   Created: 2014/11/06 09:01:23 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/05 21:05:01 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putendl_col(char const *s, int color)
 {
-	char	*tmp;
-
-	tmp = ft_itoa(n);
-	ft_putstr_fd(tmp, fd);
-	ft_free(tmp);
+	ft_putstr_col(s, color);
+	ft_putchar('\n');
 }

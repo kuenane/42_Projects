@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/05/22 14:51:37 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/06/08 16:08:04 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <stddef.h>
 
-typedef int BOOL;
+typedef int			t_bool;
 # define TRUE 1
 # define FALSE 0
 # define GNL_BSIZE 32
@@ -146,5 +146,14 @@ void				ft_strtolower(char *s);
 int					ft_abs(int a);
 int					ft_square(int n);
 int					ft_str_isint(const char *s);
+void				ft_putchar_col(char c, int color);
+void				ft_putstr_col(char const *s, int color);
+void				ft_putendl_col(char const *s, int color);
+void				ft_putnbr_col(int n, int color);
+char				*v_strjoin_free(char *s1, char *s2, int frees1, int frees2);
+void				ft_putstr_col_fd(char const *s, int color, int fd);
+int					ft_min(int a, int b);
+int					ft_max(int a, int b);
+void				ft_putnchar_fd(char c, int n, int fd);
 
 #endif

@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_max.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 09:50:56 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/08 15:50:07 by wide-aze         ###   ########.fr       */
+/*   Created: 2015/06/08 09:01:20 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/08 09:03:02 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-
-void	ft_putnbr_fd(int n, int fd)
+int		ft_max(int a, int b)
 {
-	char	*tmp;
-
-	tmp = ft_itoa(n);
-	ft_putstr_fd(tmp, fd);
-	ft_free(tmp);
+	if (a >= b)
+		return (a);
+	return (b);
 }

@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnchar_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 09:50:56 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/08 15:50:07 by wide-aze         ###   ########.fr       */
+/*   Created: 2014/11/06 09:38:40 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/08 09:14:58 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include <unistd.h>
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnchar_fd(char c, int n, int fd)
 {
-	char	*tmp;
-
-	tmp = ft_itoa(n);
-	ft_putstr_fd(tmp, fd);
-	ft_free(tmp);
+	while (--n >= 0)
+		write(fd, &c, 1);
 }
