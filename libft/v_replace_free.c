@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   v_replace_free.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 11:39:14 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/13 14:57:24 by wide-aze         ###   ########.fr       */
+/*   Created: 2015/06/13 19:03:18 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/13 19:08:45 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <libft.h>
 
-size_t	ft_strlen(const char *s)
+char	*v_replace_free(char *old, char *new, t_bool fnew)
 {
-	int	i;
-
-	i = 0;
-	while (s && s[i])
-		i++;
-	return (i);
+	ft_free(old);
+	old = v_strdup(new);
+	if (fnew)
+		ft_free(new);
+	return (old);
 }

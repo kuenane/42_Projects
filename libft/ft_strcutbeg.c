@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcutbeg.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 11:39:14 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/13 14:57:24 by wide-aze         ###   ########.fr       */
+/*   Created: 2015/06/13 19:35:54 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/13 19:39:17 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <libft.h>
 
-size_t	ft_strlen(const char *s)
+char	*ft_strcutbeg(char *str, char delim)
 {
-	int	i;
+	char	*new;
+	int		i;
 
-	i = 0;
-	while (s && s[i])
-		i++;
-	return (i);
+	i = ft_strlen(str) - 1;
+	while (str[i] != delim)
+		i--;
+	new = v_strdup(&str[i]);
+	ft_free(str);
+	return (new);
 }

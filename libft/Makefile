@@ -19,9 +19,10 @@ C_FILES = ft_atoi.c ft_memalloc.c ft_putchar.c ft_strcat.c ft_striter.c\
  ft_strjoin_free_s2.c ft_itoa_st.c convert_st_to_other.c swap_two_int.c\
  ft_exit.c ft_str_isdigit.c add_str_strtab.c del_str_strtab.c ft_strlen_strtab.c\
  ft_malloc.c swap_two_str.c ft_free.c v_free.c ft_putstrtab.c ft_strtabnew.c\
- ft_strtolower.c ft_abs.c ft_square.c ft_str_isint.c ft_putchar_col.c\
+ ft_strtolower.c ft_abs.c ft_square.c ft_str_isint.c ft_putchar_col.c v_strtabnew.c\
  ft_putstr_col.c ft_putendl_col.c ft_putnbr_col.c v_strjoin_free.c ft_putnchar_fd.c\
- ft_putstr_col_fd.c ft_min.c ft_max.c
+ ft_putstr_col_fd.c ft_min.c ft_max.c ft_str_isint2.c v_strsplit.c ft_count_word.c\
+ v_itoa.c ft_errno.c ft_multifree.c v_replace_free.c ft_strcutbeg.c ft_strchrstr.c
 
 O_FILES = $(C_FILES:.c=.o)
 
@@ -30,7 +31,7 @@ all: $(NAME)
 $(NAME): $(O_FILES)
 	@ar rc $@ $^
 	@ranlib $@
-	@echo "\nMakefile libft is ready :)"
+	@echo "\nlibft is ready :)"
 
 %.o: $(C_DIR)%.c
 	@clang -Wall -Wextra -Werror -I$(H_DIR) -o $@ -c $<

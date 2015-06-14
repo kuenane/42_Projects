@@ -1,23 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_errno.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 11:39:14 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/13 14:57:24 by wide-aze         ###   ########.fr       */
+/*   Created: 2015/06/13 10:19:26 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/06/13 10:32:24 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <errno.h>
 #include <string.h>
+#include <libft.h>
 
-size_t	ft_strlen(const char *s)
+void	init_ft_errno(void)
 {
-	int	i;
+	errno = 0;
+}
 
-	i = 0;
-	while (s && s[i])
-		i++;
-	return (i);
+int		ft_errno(void)
+{
+	return (errno);
+}
+
+void	ft_puterrno(char *bef, char *aft, t_bool carr_ret, int fd)
+{
+	char	*tmp;
+
+	if (!errno)
+		return ;
+	tmp = strerror(errno);
+	if (bef)
+		ft_putstr_fd(bef, fd);
+	ft_putstr_fd(tmp, fd);
+	if (aft)
+		ft_putstr_fd(aft, fd);
+	if (carr_ret == TRUE)
+		ft_putchar_fd('\n', fd);
+	ft_free(tmp);
 }
