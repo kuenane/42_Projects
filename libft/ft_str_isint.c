@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/05 15:52:11 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/09 16:35:37 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/06/16 09:07:13 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #define MIN_INT_STR "-2147483648"
 #define MAX_INT_STR	"2147483647"
 
-int		ft_str_isint(const char *s)
+t_bool		ft_str_isint(const char *s)
 {
 	int				len;
 

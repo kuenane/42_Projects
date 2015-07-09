@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   add_str_strtab.c                                   :+:      :+:    :+:   */
+/*   add_int_inttab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/31 08:18:35 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/18 12:24:27 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/06/18 14:02:02 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	**add_str_strtab(char **tab, char *str)
+int		*add_int_inttab(int *tab, int toadd, int size)
 {
-	char	**new;
-	size_t	i;
+	int	*newtab;
+	int	i;
 
+	newtab = (int*)v_malloc(sizeof(int) * (size + 1));
 	i = 0;
-	while (tab[i] != NULL)
-		i++;
-	new = (char**)v_malloc(sizeof(char*) * (i + 2));
-	i = 0;
-	while (tab[i] != NULL)
+	while (i < size)
 	{
-		new[i] = tab[i];
+		newtab[i] = tab[i];
 		i++;
 	}
-	new[i] = v_strdup(str);
-	new[i + 1] = NULL;
+	newtab[i] = toadd;
 	ft_free(tab);
-	return (new);
+	return (newtab);
 }

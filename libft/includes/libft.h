@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/14 09:49:10 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/06/17 17:00:56 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,5 +166,7 @@ void				ft_multifree(void *f1, void *f2, void *f3, void *f4);
 char				*v_replace_free(char *old, char *new, t_bool fnew);
 char				*ft_strcutbeg(char *str, char delim);
 char				*ft_strchrstr(const char *s, char *tosearch);
+char				*v_strndup(char *str, int len);
+int					*add_int_inttab(int *tab, int toadd, int size);
 
 #endif

@@ -22,7 +22,8 @@ C_FILES = ft_atoi.c ft_memalloc.c ft_putchar.c ft_strcat.c ft_striter.c\
  ft_strtolower.c ft_abs.c ft_square.c ft_str_isint.c ft_putchar_col.c v_strtabnew.c\
  ft_putstr_col.c ft_putendl_col.c ft_putnbr_col.c v_strjoin_free.c ft_putnchar_fd.c\
  ft_putstr_col_fd.c ft_min.c ft_max.c ft_str_isint2.c v_strsplit.c ft_count_word.c\
- v_itoa.c ft_errno.c ft_multifree.c v_replace_free.c ft_strcutbeg.c ft_strchrstr.c
+ v_itoa.c ft_errno.c ft_multifree.c v_replace_free.c ft_strcutbeg.c ft_strchrstr.c\
+ v_strndup.c add_int_inttab.c
 
 O_FILES = $(C_FILES:.c=.o)
 
