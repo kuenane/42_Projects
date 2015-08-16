@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/06/17 17:00:56 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/07/14 11:09:51 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,5 +168,12 @@ char				*ft_strcutbeg(char *str, char delim);
 char				*ft_strchrstr(const char *s, char *tosearch);
 char				*v_strndup(char *str, int len);
 int					*add_int_inttab(int *tab, int toadd, int size);
+int					ft_random(int min, int max);
+void				ft_quicksort_int(int *tab, int start, int end);
+void				ft_quicksort_int_dsc(int *tab, int start, int end);
+void				ft_quicksort_str(char **tab, int start, int end);
+void				ft_quicksort_str_dsc(char **tab, int start, int end);
+void				ft_srand(void);
+int					*v_inttabnew(int nb);
 
 #endif

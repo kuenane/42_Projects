@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   v_inttabnew.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 08:45:20 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/08/13 22:24:20 by dw31             ###   ########.fr       */
+/*   Created: 2015/02/21 17:50:33 by wide-aze          #+#    #+#             */
+/*   Updated: 2015/07/14 11:09:59 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strstr(const char *s1, const char *s2)
+int		*v_inttabnew(int nb)
 {
-	int		len_s2;
+	int		*new;
 
-	len_s2 = ft_strlen(s2);
-	if (len_s2 == 0)
-		return ((char*)s1);
-	while (*s1)
-	{
-		if (ft_strncmp(s1, s2, len_s2) == 0)
-			return ((char*)s1);
-		else
-			s1++;
-	}
-	return (NULL);
+	new = (int*)v_malloc(sizeof(int));
+	new[0] = nb;
+	return (new);
 }

@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/09 09:44:22 by wide-aze          #+#    #+#             */
-/*   Updated: 2014/12/09 09:46:11 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/08/13 22:23:37 by dw31             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ char	*ft_strjoin_free(char *s1, char const *s2)
 		return (NULL);
 	str = ft_strcpy(str, s1);
 	str = ft_strcat(str, s2);
-	free (s1);
+	free(s1);
 	return (str);
 }

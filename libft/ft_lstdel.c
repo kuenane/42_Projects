@@ -6,14 +6,14 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 11:48:51 by wide-aze          #+#    #+#             */
-/*   Updated: 2014/11/11 16:52:05 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/08/13 22:20:39 by dw31             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stdlib.h>
 
-void ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
 	t_list	*list;
 	t_list	*next_list;
