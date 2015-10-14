@@ -166,7 +166,7 @@ elif [ -z "$XMLFILE" ]; then
 fi
 
 if [ -n "$OUTFILE" ]; then
-	xsltproc ${XSLTFILE} ${XMLFILE} | xmllint --format - | perl -0pe 's/( more .*\n.*)bus="1">/\1occ="1">/g' | perl -0pe 's/( more .*\n.*)\/>/\1 bus="1"\/>/g' > ${OUTFILE}
+	xsltproc ${XSLTFILE} ${XMLFILE} | xmllint --format - | perl -0pe 's/( more .*\n.*)bus="1">/\1occ="1">/g' | perl -0pe 's/( more .*\n.*)\/>/\1 occ="1"\/>/g' > ${OUTFILE}
 else
-	xsltproc ${XSLTFILE} ${XMLFILE} | xmllint --format - | perl -0pe 's/( more .*\n.*)bus="1">/\1occ="1">/g' | perl -0pe 's/( more .*\n.*)\/>/\1 bus="1"\/>/g'
+	xsltproc ${XSLTFILE} ${XMLFILE} | xmllint --format - | perl -0pe 's/( more .*\n.*)bus="1">/\1occ="1">/g' | perl -0pe 's/( more .*\n.*)\/>/\1 occ="1"\/>/g'
 fi
