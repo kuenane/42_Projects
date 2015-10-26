@@ -1,0 +1,38 @@
+This readme presents the differents steps to product a codec and a descriptor from an XSD.
+You will find all utils in this folder and examples files in "examples" directory.
+
+-Get an XSD file
+  examples file: 
+                ONIX_BookProduct_3.0_reference.xsd
+
+-Transorm the XSD to WSDL with XMLspy
+  examples file: 
+                sample.wsdl
+
+-Build a message sample in SoapUI with the WSDL file
+
+-Delete the doubloons fields in the generated xml using doubleFinder.xslt
+  usage: xsltproc doubleFinder.xslt sampleGenerated.xml
+  examples files: 
+                sampleProductClearDOUBLOONS.xml (sample generated with doubloons)
+                sampleProductClear.xml (sample result with no doubloon)
+
+-Generate the corresponding codec using xsltApplicator.sh and toCodec.xsl
+  usage: xsltApplicator.sh -xslt toCodec.xsl -xml sampleGenerated.xml
+  examples files:
+                sampleProductClear.xml (sample with no doubloon)
+                codecEmpty.xml (codec generated)
+
+-To enable codec fields (all disabled by default), you must use codecFiller.sh to generate the final codec from a busFieldPath file.
+busFieldPath is a manually created file containing the path to one field per line (example: grandpa/parent/child)
+  usage: codecFiller.sh busFieldPath codecEmpty outputFile
+  examples files: 
+                busFieldPath (contain each field path)
+                codecEmpty.xml
+                codecFilled.xml
+
+-Generate now the desc file from the final codec using codec2desc.sh. You can get only the busdef or a full descriptor using --fulldesc option
+  usage: codec2desc.sh codecFilled.xml [--fulldesc Product_Name]
+  examples files: 
+                codecFilled.xml
+                sample_product.desc

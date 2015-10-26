@@ -1,0 +1,2006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol name="" defaultMessage="Product">
+  <type name="LENGTH_TYPE" code="A"/>
+  <type name="SEP_TYPE" code="B"/>
+  <type name="TAG_TYPE" code="B"/>
+  <type name="XML_TYPE" code="A"/>
+  <prefield/>
+  <message name="Product" XML="1">
+    <xmlfield name="Product" type="A" charset="UTF-8">
+      <element name="Product" valToField="">
+        <element name="RecordReference" valToField=""/>
+        <element name="NotificationType" valToField=""/>
+        <!--Zero or more repetitions:-->
+        <element name="DeletionText" valToField="" occ="1"/>
+        <!--Optional:-->
+        <element name="RecordSourceType" valToField=""/>
+        <!--Zero or more repetitions:-->
+        <element name="RecordSourceIdentifier" valToField="" occ="1">
+          <element name="RecordSourceIDType" valToField=""/>
+          <!--Optional:-->
+          <element name="IDTypeName" valToField=""/>
+          <element name="IDValue" valToField=""/>
+        </element>
+        <!--Optional:-->
+        <element name="RecordSourceName" valToField=""/>
+        <!--1 or more repetitions:-->
+        <element name="ProductIdentifier" valToField="" occ="1">
+          <element name="ProductIDType" valToField=""/>
+          <!--Optional:-->
+          <element name="IDTypeName" valToField=""/>
+          <element name="IDValue" valToField=""/>
+        </element>
+        <!--Zero or more repetitions:-->
+        <element name="Barcode" valToField="" occ="1">
+          <element name="BarcodeType" valToField=""/>
+          <!--Optional:-->
+          <element name="PositionOnProduct" valToField=""/>
+        </element>
+        <!--Optional:-->
+        <element name="DescriptiveDetail" valToField="" bus="1">
+          <element name="ProductComposition" valToField=""/>
+          <element name="ProductForm" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="ProductFormDetail" valToField="" occ="1"/>
+          <!--Zero or more repetitions:-->
+          <element name="ProductFormFeature" valToField="" occ="1">
+            <element name="ProductFormFeatureType" valToField=""/>
+            <!--Optional:-->
+            <element name="ProductFormFeatureValue" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ProductFormFeatureDescription" valToField="" occ="1"/>
+          </element>
+          <!--Optional:-->
+          <element name="ProductPackaging" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="ProductFormDescription" valToField="" occ="1"/>
+          <!--Optional:-->
+          <element name="TradeCategory" valToField=""/>
+          <!--Optional:-->
+          <element name="PrimaryContentType" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="ProductContentType" valToField="" occ="1"/>
+          <!--Zero or more repetitions:-->
+          <element name="Measure" valToField="" occ="1">
+            <element name="MeasureType" valToField=""/>
+            <element name="Measurement" valToField=""/>
+            <element name="MeasureUnitCode" valToField=""/>
+          </element>
+          <!--Optional:-->
+          <element name="CountryOfManufacture" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="EpubTechnicalProtection" valToField="" occ="1"/>
+          <!--Zero or more repetitions:-->
+          <element name="EpubUsageConstraint" valToField="" occ="1">
+            <element name="EpubUsageType" valToField=""/>
+            <element name="EpubUsageStatus" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="EpubUsageLimit" valToField="" occ="1">
+              <element name="Quantity" valToField=""/>
+              <element name="EpubUsageUnit" valToField=""/>
+            </element>
+          </element>
+          <!--Optional:-->
+          <element name="EpubLicense" valToField="" bus="1">
+            <!--1 or more repetitions:-->
+            <element name="EpubLicenseName" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="EpubLicenseExpression" valToField="" occ="1">
+              <element name="EpubLicenseExpressionType" valToField=""/>
+              <!--Optional:-->
+              <element name="EpubLicenseExpressionTypeName" valToField=""/>
+              <element name="EpubLicenseExpressionLink" valToField=""/>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="MapScale" valToField="" occ="1"/>
+          <!--Zero or more repetitions:-->
+          <element name="ProductClassification" valToField="" occ="1">
+            <element name="ProductClassificationType" valToField=""/>
+            <element name="ProductClassificationCode" valToField=""/>
+            <!--Optional:-->
+            <element name="Percent" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="ProductPart" valToField="" occ="1">
+            <!--Optional:-->
+            <element name="PrimaryPart" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ProductIdentifier" valToField="" occ="1">
+              <element name="ProductIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <element name="ProductForm" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ProductFormDetail" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ProductFormFeature" valToField="" occ="1">
+              <element name="ProductFormFeatureType" valToField=""/>
+              <!--Optional:-->
+              <element name="ProductFormFeatureValue" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ProductFormFeatureDescription" valToField="" occ="1"/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ProductFormDescription" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ProductContentType" valToField="" occ="1"/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="NumberOfItemsOfThisForm" valToField=""/>
+            <element name="NumberOfCopies" valToField=""/>
+            <!--Optional:-->
+            <element name="CountryOfManufacture" valToField=""/>
+          </element>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--1 or more repetitions:-->
+          <element name="Collection" valToField="" occ="1">
+            <element name="CollectionType" valToField=""/>
+            <!--Optional:-->
+            <element name="SourceName" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="CollectionIdentifier" valToField="" occ="1">
+              <element name="CollectionIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="CollectionSequence" valToField="" occ="1">
+              <element name="CollectionSequenceType" valToField=""/>
+              <!--Optional:-->
+              <element name="CollectionSequenceTypeName" valToField=""/>
+              <element name="CollectionSequenceNumber" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="TitleDetail" valToField="" occ="1">
+              <element name="TitleType" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="TitleElement" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="SequenceNumber" valToField=""/>
+                <element name="TitleElementLevel" valToField=""/>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <element name="PartNumber" valToField=""/>
+                <!--Optional:-->
+                <element name="YearOfAnnual" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="TitlePrefix" valToField=""/>
+                <element name="NoPrefix" valToField=""/>
+                <element name="TitleWithoutPrefix" valToField=""/>
+                <element name="TitleText" busToField="TitleText" valToField="" bus="1">
+                  <attribute name="textcase" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="Subtitle" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="TitleStatement" valToField="" bus="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+            </element>
+            <!--1 or more repetitions:-->
+            <element name="Contributor" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="SequenceNumber" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="ContributorRole" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="FromLanguage" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="ToLanguage" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="NameType" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--You have a CHOICE of the next 5 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="NameIdentifier" valToField="" occ="1">
+                <element name="NameIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--You have a CHOICE of the next 4 items at this level-->
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="PersonName" valToField=""/>
+              <!--Optional:-->
+              <element name="PersonNameInverted" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesBeforeNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesBeforeKey" valToField=""/>
+              <!--Optional:-->
+              <element name="PrefixToKey" valToField=""/>
+              <element name="KeyNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesAfterKey" valToField=""/>
+              <!--Optional:-->
+              <element name="SuffixToKey" valToField=""/>
+              <!--Optional:-->
+              <element name="LettersAfterNames" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesAfterNames" valToField=""/>
+              <element name="CorporateName" valToField=""/>
+              <!--Optional:-->
+              <element name="CorporateNameInverted" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="AlternativeName" valToField="" occ="1">
+                <element name="NameType" valToField=""/>
+                <!--You have a CHOICE of the next 5 items at this level-->
+                <!--1 or more repetitions:-->
+                <element name="NameIdentifier" valToField="" occ="1">
+                  <element name="NameIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="PersonName" valToField=""/>
+                <!--Optional:-->
+                <element name="PersonNameInverted" valToField=""/>
+                <!--Optional:-->
+                <element name="TitlesBeforeNames" valToField=""/>
+                <!--Optional:-->
+                <element name="NamesBeforeKey" valToField=""/>
+                <!--Optional:-->
+                <element name="PrefixToKey" valToField=""/>
+                <element name="KeyNames" valToField=""/>
+                <!--Optional:-->
+                <element name="NamesAfterKey" valToField=""/>
+                <!--Optional:-->
+                <element name="SuffixToKey" valToField=""/>
+                <!--Optional:-->
+                <element name="LettersAfterNames" valToField=""/>
+                <!--Optional:-->
+                <element name="TitlesAfterNames" valToField=""/>
+                <element name="CorporateName" valToField=""/>
+                <!--Optional:-->
+                <element name="CorporateNameInverted" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ContributorDate" valToField="" occ="1">
+                <element name="ContributorDateRole" valToField=""/>
+                <!--Optional:-->
+                <element name="DateFormat" valToField=""/>
+                <element name="Date" busToField="Date" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ProfessionalAffiliation" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--1 or more repetitions:-->
+                <element name="ProfessionalPosition" valToField="" occ="1"/>
+                <!--Optional:-->
+                <element name="Affiliation" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="BiographicalNote" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="Website" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="WebsiteRole" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="WebsiteDescription" valToField="" occ="1">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="block" valToField=""/>
+                  <element name="inline" valToField=""/>
+                </element>
+                <element name="WebsiteLink" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ContributorDescription" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <element name="UnnamedPersons" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ContributorPlace" valToField="" occ="1">
+                <element name="ContributorPlaceRelator" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="CountryCode" valToField=""/>
+                <!--Optional:-->
+                <element name="RegionCode" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="LocationName" valToField="" occ="1"/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ContributorStatement" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+          </element>
+          <element name="NoCollection" valToField=""/>
+          <!--1 or more repetitions:-->
+          <element name="TitleDetail" valToField="" occ="1">
+            <element name="TitleType" valToField=""/>
+            <element name="TitleElement" valToField="" bus="1">
+              <!--Optional:-->
+              <element name="SequenceNumber" valToField=""/>
+              <element name="TitleElementLevel" valToField=""/>
+              <!--You have a CHOICE of the next 4 items at this level-->
+              <element name="PartNumber" valToField=""/>
+              <!--Optional:-->
+              <element name="YearOfAnnual" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="TitlePrefix" valToField=""/>
+              <element name="NoPrefix" valToField=""/>
+              <element name="TitleWithoutPrefix" valToField=""/>
+              <element name="TitleText" busToField="TitleText" valToField="" bus="1">
+                <attribute name="textcase" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="Subtitle" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="TitleStatement" valToField="" bus="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+          </element>
+          <element name="ThesisType" valToField=""/>
+          <!--Optional:-->
+          <element name="ThesisPresentedTo" valToField=""/>
+          <!--Optional:-->
+          <element name="ThesisYear" busToField="ThesisYear" valToField="" bus="1">
+            <attribute name="dateformat" valToField=""/>
+          </element>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <element name="Contributor" valToField="" occ="1">
+            <!--Optional:-->
+            <element name="SequenceNumber" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="ContributorRole" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="FromLanguage" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ToLanguage" valToField="" occ="1"/>
+            <!--Optional:-->
+            <element name="NameType" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--You have a CHOICE of the next 5 items at this level-->
+            <!--1 or more repetitions:-->
+            <element name="NameIdentifier" valToField="" occ="1">
+              <element name="NameIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <!--You have a CHOICE of the next 4 items at this level-->
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="PersonName" valToField=""/>
+            <!--Optional:-->
+            <element name="PersonNameInverted" valToField=""/>
+            <!--Optional:-->
+            <element name="TitlesBeforeNames" valToField=""/>
+            <!--Optional:-->
+            <element name="NamesBeforeKey" valToField=""/>
+            <!--Optional:-->
+            <element name="PrefixToKey" valToField=""/>
+            <element name="KeyNames" valToField=""/>
+            <!--Optional:-->
+            <element name="NamesAfterKey" valToField=""/>
+            <!--Optional:-->
+            <element name="SuffixToKey" valToField=""/>
+            <!--Optional:-->
+            <element name="LettersAfterNames" valToField=""/>
+            <!--Optional:-->
+            <element name="TitlesAfterNames" valToField=""/>
+            <element name="CorporateName" valToField=""/>
+            <!--Optional:-->
+            <element name="CorporateNameInverted" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="AlternativeName" valToField="" occ="1">
+              <element name="NameType" valToField=""/>
+              <!--You have a CHOICE of the next 5 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="NameIdentifier" valToField="" occ="1">
+                <element name="NameIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--You have a CHOICE of the next 4 items at this level-->
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="PersonName" valToField=""/>
+              <!--Optional:-->
+              <element name="PersonNameInverted" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesBeforeNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesBeforeKey" valToField=""/>
+              <!--Optional:-->
+              <element name="PrefixToKey" valToField=""/>
+              <element name="KeyNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesAfterKey" valToField=""/>
+              <!--Optional:-->
+              <element name="SuffixToKey" valToField=""/>
+              <!--Optional:-->
+              <element name="LettersAfterNames" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesAfterNames" valToField=""/>
+              <element name="CorporateName" valToField=""/>
+              <!--Optional:-->
+              <element name="CorporateNameInverted" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ContributorDate" valToField="" occ="1">
+              <element name="ContributorDateRole" valToField=""/>
+              <!--Optional:-->
+              <element name="DateFormat" valToField=""/>
+              <element name="Date" busToField="Date" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ProfessionalAffiliation" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="ProfessionalPosition" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="Affiliation" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="BiographicalNote" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="Website" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="WebsiteRole" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="WebsiteDescription" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <element name="WebsiteLink" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ContributorDescription" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <element name="UnnamedPersons" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ContributorPlace" valToField="" occ="1">
+              <element name="ContributorPlaceRelator" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="CountryCode" valToField=""/>
+              <!--Optional:-->
+              <element name="RegionCode" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="LocationName" valToField="" occ="1"/>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="ContributorStatement" valToField="" occ="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="block" valToField=""/>
+            <element name="inline" valToField=""/>
+          </element>
+          <!--Optional:-->
+          <element name="NoContributor" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="Conference" valToField="" occ="1">
+            <!--Optional:-->
+            <element name="ConferenceRole" valToField=""/>
+            <element name="ConferenceName" valToField=""/>
+            <!--Optional:-->
+            <element name="ConferenceAcronym" valToField=""/>
+            <!--Optional:-->
+            <element name="ConferenceNumber" valToField=""/>
+            <!--Optional:-->
+            <element name="ConferenceTheme" valToField="" bus="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="ConferenceDate" busToField="ConferenceDate" valToField="" bus="1">
+              <attribute name="dateformat" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="ConferencePlace" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ConferenceSponsor" valToField="" occ="1">
+              <!--You have a CHOICE of the next 3 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="ConferenceSponsorIdentifier" valToField="" occ="1">
+                <element name="ConferenceSponsorIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="PersonName" valToField=""/>
+              <element name="CorporateName" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="Website" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="WebsiteRole" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="WebsiteDescription" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <element name="WebsiteLink" valToField=""/>
+            </element>
+          </element>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--Zero or more repetitions:-->
+          <element name="EditionType" valToField="" occ="1"/>
+          <element name="EditionNumber" valToField=""/>
+          <!--Optional:-->
+          <element name="EditionVersionNumber" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="EditionStatement" valToField="" occ="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="block" valToField=""/>
+            <element name="inline" valToField=""/>
+          </element>
+          <!--Optional:-->
+          <element name="NoEdition" valToField=""/>
+          <!--Optional:-->
+          <element name="ReligiousText" valToField="" bus="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="Bible" valToField="" bus="1">
+              <!--1 or more repetitions:-->
+              <element name="BibleContents" valToField="" occ="1"/>
+              <!--1 or more repetitions:-->
+              <element name="BibleVersion" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="StudyBibleType" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="BiblePurpose" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="BibleTextOrganization" valToField=""/>
+              <!--Optional:-->
+              <element name="BibleReferenceLocation" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="BibleTextFeature" valToField="" occ="1"/>
+            </element>
+            <element name="ReligiousTextIdentifier" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="ReligiousTextFeature" valToField="" occ="1">
+              <element name="ReligiousTextFeatureType" valToField=""/>
+              <element name="ReligiousTextFeatureCode" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ReligiousTextFeatureDescription" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="Language" valToField="" occ="1">
+            <element name="LanguageRole" valToField=""/>
+            <element name="LanguageCode" valToField=""/>
+            <!--Optional:-->
+            <element name="CountryCode" valToField=""/>
+            <!--Optional:-->
+            <element name="ScriptCode" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="Extent" valToField="" occ="1">
+            <element name="ExtentType" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="ExtentValue" valToField=""/>
+            <!--Optional:-->
+            <element name="ExtentValueRoman" valToField=""/>
+            <element name="ExtentValueRoman" valToField=""/>
+            <element name="ExtentUnit" valToField=""/>
+          </element>
+          <!--Optional:-->
+          <element name="Illustrated" valToField=""/>
+          <!--Optional:-->
+          <element name="NumberOfIllustrations" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="IllustrationsNote" valToField="" occ="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="block" valToField=""/>
+            <element name="inline" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="AncillaryContent" valToField="" occ="1">
+            <element name="AncillaryContentType" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="AncillaryContentDescription" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="Number" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="Subject" valToField="" occ="1">
+            <!--Optional:-->
+            <element name="MainSubject" valToField=""/>
+            <element name="SubjectSchemeIdentifier" valToField=""/>
+            <!--Optional:-->
+            <element name="SubjectSchemeName" valToField=""/>
+            <!--Optional:-->
+            <element name="SubjectSchemeVersion" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="SubjectCode" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="SubjectHeadingText" valToField="" occ="1"/>
+          </element>
+          <element name="NameAsSubject" valToField="" bus="1">
+            <!--Optional:-->
+            <element name="NameType" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="NameIdentifier" valToField="" occ="1">
+              <element name="NameIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <element name="PersonName" valToField=""/>
+            <!--Optional:-->
+            <element name="PersonNameInverted" valToField=""/>
+            <!--Optional:-->
+            <element name="TitlesBeforeNames" valToField=""/>
+            <!--Optional:-->
+            <element name="NamesBeforeKey" valToField=""/>
+            <!--Optional:-->
+            <element name="PrefixToKey" valToField=""/>
+            <element name="KeyNames" valToField=""/>
+            <!--Optional:-->
+            <element name="NamesAfterKey" valToField=""/>
+            <!--Optional:-->
+            <element name="SuffixToKey" valToField=""/>
+            <!--Optional:-->
+            <element name="LettersAfterNames" valToField=""/>
+            <!--Optional:-->
+            <element name="TitlesAfterNames" valToField=""/>
+            <element name="CorporateName" valToField=""/>
+            <!--Optional:-->
+            <element name="CorporateNameInverted" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="AudienceCode" valToField="" occ="1"/>
+          <!--Zero or more repetitions:-->
+          <element name="Audience" valToField="" occ="1">
+            <element name="AudienceCodeType" valToField=""/>
+            <!--Optional:-->
+            <element name="AudienceCodeTypeName" valToField=""/>
+            <element name="AudienceCodeValue" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="AudienceRange" valToField="" occ="1">
+            <element name="AudienceRangeQualifier" valToField=""/>
+            <element name="AudienceRangePrecision" valToField=""/>
+            <element name="AudienceRangeValue" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="AudienceDescription" valToField="" occ="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="block" valToField=""/>
+            <element name="inline" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="Complexity" valToField="" occ="1">
+            <element name="ComplexitySchemeIdentifier" valToField=""/>
+            <element name="ComplexityCode" valToField=""/>
+          </element>
+        </element>
+        <!--Optional:-->
+        <element name="CollateralDetail" valToField="" bus="1">
+          <!--Zero or more repetitions:-->
+          <element name="TextContent" valToField="" occ="1">
+            <element name="TextType" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="ContentAudience" valToField="" occ="1"/>
+            <!--1 or more repetitions:-->
+            <element name="Text" valToField="" occ="1">
+              <attribute name="textformat" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="TextAuthor" valToField="" occ="1"/>
+            <!--Optional:-->
+            <element name="TextSourceCorporate" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="SourceTitle" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ContentDate" valToField="" occ="1">
+              <element name="ContentDateRole" valToField=""/>
+              <!--Optional:-->
+              <element name="DateFormat" valToField=""/>
+              <element name="Date" busToField="Date" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+          </element>
+          <element name="CitedContent" valToField="" bus="1">
+            <element name="CitedContentType" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ContentAudience" valToField="" occ="1"/>
+            <!--Optional:-->
+            <element name="SourceType" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--1 or more repetitions:-->
+            <element name="SourceTitle" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ListName" valToField="" occ="1"/>
+            <!--Optional:-->
+            <element name="PositionOnList" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="CitationNote" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ResourceLink" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ContentDate" valToField="" occ="1">
+              <element name="ContentDateRole" valToField=""/>
+              <!--Optional:-->
+              <element name="DateFormat" valToField=""/>
+              <element name="Date" busToField="Date" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="SupportingResource" valToField="" occ="1">
+            <element name="ResourceContentType" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="ContentAudience" valToField="" occ="1"/>
+            <element name="ResourceMode" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ResourceFeature" valToField="" occ="1">
+              <element name="ResourceFeatureType" valToField=""/>
+              <!--Optional:-->
+              <element name="FeatureValue" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="FeatureNote" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+            </element>
+            <!--1 or more repetitions:-->
+            <element name="ResourceVersion" valToField="" occ="1">
+              <element name="ResourceForm" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ResourceVersionFeature" valToField="" occ="1">
+                <element name="ResourceVersionFeatureType" valToField=""/>
+                <!--Optional:-->
+                <element name="FeatureValue" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="FeatureNote" valToField="" occ="1">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="block" valToField=""/>
+                  <element name="inline" valToField=""/>
+                </element>
+              </element>
+              <!--1 or more repetitions:-->
+              <element name="ResourceLink" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="ContentDate" valToField="" occ="1">
+                <element name="ContentDateRole" valToField=""/>
+                <!--Optional:-->
+                <element name="DateFormat" valToField=""/>
+                <element name="Date" busToField="Date" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="Prize" valToField="" occ="1">
+            <!--1 or more repetitions:-->
+            <element name="PrizeName" valToField="" occ="1"/>
+            <!--Optional:-->
+            <element name="PrizeYear" valToField=""/>
+            <!--Optional:-->
+            <element name="PrizeCountry" valToField=""/>
+            <!--Optional:-->
+            <element name="PrizeCode" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="PrizeStatement" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="PrizeJury" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+          </element>
+        </element>
+        <!--Optional:-->
+        <element name="ContentDetail" valToField="" bus="1">
+          <!--1 or more repetitions:-->
+          <element name="ContentItem" valToField="" occ="1">
+            <!--Optional:-->
+            <element name="LevelSequenceNumber" valToField=""/>
+            <element name="TextItem" valToField="" bus="1">
+              <element name="TextItemType" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="TextItemIdentifier" valToField="" occ="1">
+                <element name="TextItemIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="PageRun" valToField="" occ="1">
+                <element name="FirstPageNumber" valToField=""/>
+                <!--Optional:-->
+                <element name="LastPageNumber" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="NumberOfPages" valToField=""/>
+            </element>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="ComponentTypeName" valToField=""/>
+            <!--Optional:-->
+            <element name="ComponentNumber" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="TitleDetail" valToField="" occ="1">
+              <element name="TitleType" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="TitleElement" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="SequenceNumber" valToField=""/>
+                <element name="TitleElementLevel" valToField=""/>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <element name="PartNumber" valToField=""/>
+                <!--Optional:-->
+                <element name="YearOfAnnual" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="TitlePrefix" valToField=""/>
+                <element name="NoPrefix" valToField=""/>
+                <element name="TitleWithoutPrefix" valToField=""/>
+                <element name="TitleText" valToField=""/>
+                <!--Optional:-->
+                <element name="Subtitle" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="TitleStatement" valToField="" bus="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+            </element>
+            <!--Optional:-->
+            <element name="ComponentNumber" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="TitleDetail" valToField="" occ="1">
+              <element name="TitleType" valToField=""/>
+              <element name="TitleElement" valToField="" bus="1">
+                <!--Optional:-->
+                <element name="SequenceNumber" valToField=""/>
+                <element name="TitleElementLevel" valToField=""/>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <element name="PartNumber" valToField=""/>
+                <!--Optional:-->
+                <element name="YearOfAnnual" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="TitlePrefix" valToField=""/>
+                <element name="NoPrefix" valToField=""/>
+                <element name="TitleWithoutPrefix" valToField=""/>
+                <element name="TitleText" valToField=""/>
+                <!--Optional:-->
+                <element name="Subtitle" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="TitleStatement" valToField="" bus="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+            </element>
+            <element name="Contributor" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="SequenceNumber" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="ContributorRole" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="FromLanguage" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="ToLanguage" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="NameType" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--You have a CHOICE of the next 5 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="NameIdentifier" valToField="" occ="1">
+                <element name="NameIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--You have a CHOICE of the next 4 items at this level-->
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="PersonName" valToField=""/>
+              <!--Optional:-->
+              <element name="PersonNameInverted" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesBeforeNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesBeforeKey" valToField=""/>
+              <!--Optional:-->
+              <element name="PrefixToKey" valToField=""/>
+              <element name="KeyNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesAfterKey" valToField=""/>
+              <!--Optional:-->
+              <element name="SuffixToKey" valToField=""/>
+              <!--Optional:-->
+              <element name="LettersAfterNames" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesAfterNames" valToField=""/>
+              <element name="CorporateName" valToField=""/>
+              <!--Optional:-->
+              <element name="CorporateNameInverted" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="AlternativeName" valToField="" occ="1">
+                <element name="NameType" valToField=""/>
+                <!--You have a CHOICE of the next 5 items at this level-->
+                <!--1 or more repetitions:-->
+                <element name="NameIdentifier" valToField="" occ="1">
+                  <element name="NameIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+                <!--You have a CHOICE of the next 4 items at this level-->
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="PersonName" valToField=""/>
+                <!--Optional:-->
+                <element name="PersonNameInverted" valToField=""/>
+                <!--Optional:-->
+                <element name="TitlesBeforeNames" valToField=""/>
+                <!--Optional:-->
+                <element name="NamesBeforeKey" valToField=""/>
+                <!--Optional:-->
+                <element name="PrefixToKey" valToField=""/>
+                <element name="KeyNames" valToField=""/>
+                <!--Optional:-->
+                <element name="NamesAfterKey" valToField=""/>
+                <!--Optional:-->
+                <element name="SuffixToKey" valToField=""/>
+                <!--Optional:-->
+                <element name="LettersAfterNames" valToField=""/>
+                <!--Optional:-->
+                <element name="TitlesAfterNames" valToField=""/>
+                <element name="CorporateName" valToField=""/>
+                <!--Optional:-->
+                <element name="CorporateNameInverted" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ContributorDate" valToField="" occ="1">
+                <element name="ContributorDateRole" valToField=""/>
+                <!--Optional:-->
+                <element name="DateFormat" valToField=""/>
+                <element name="Date" busToField="Date" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ProfessionalAffiliation" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--1 or more repetitions:-->
+                <element name="ProfessionalPosition" valToField="" occ="1"/>
+                <!--Optional:-->
+                <element name="Affiliation" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="BiographicalNote" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="Website" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="WebsiteRole" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="WebsiteDescription" valToField="" occ="1">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="block" valToField=""/>
+                  <element name="inline" valToField=""/>
+                </element>
+                <element name="WebsiteLink" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ContributorDescription" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <element name="UnnamedPersons" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ContributorPlace" valToField="" occ="1">
+                <element name="ContributorPlaceRelator" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="CountryCode" valToField=""/>
+                <!--Optional:-->
+                <element name="RegionCode" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="LocationName" valToField="" occ="1"/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="Subject" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="MainSubject" valToField=""/>
+              <element name="SubjectSchemeIdentifier" valToField=""/>
+              <!--Optional:-->
+              <element name="SubjectSchemeName" valToField=""/>
+              <!--Optional:-->
+              <element name="SubjectSchemeVersion" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="SubjectCode" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="SubjectHeadingText" valToField="" occ="1"/>
+            </element>
+            <element name="NameAsSubject" valToField="" bus="1">
+              <!--Optional:-->
+              <element name="NameType" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="NameIdentifier" valToField="" occ="1">
+                <element name="NameIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <element name="PersonName" valToField=""/>
+              <!--Optional:-->
+              <element name="PersonNameInverted" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesBeforeNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesBeforeKey" valToField=""/>
+              <!--Optional:-->
+              <element name="PrefixToKey" valToField=""/>
+              <element name="KeyNames" valToField=""/>
+              <!--Optional:-->
+              <element name="NamesAfterKey" valToField=""/>
+              <!--Optional:-->
+              <element name="SuffixToKey" valToField=""/>
+              <!--Optional:-->
+              <element name="LettersAfterNames" valToField=""/>
+              <!--Optional:-->
+              <element name="TitlesAfterNames" valToField=""/>
+              <element name="CorporateName" valToField=""/>
+              <!--Optional:-->
+              <element name="CorporateNameInverted" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="TextContent" valToField="" occ="1">
+              <element name="TextType" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="ContentAudience" valToField="" occ="1"/>
+              <!--1 or more repetitions:-->
+              <element name="Text" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="TextAuthor" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="TextSourceCorporate" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="SourceTitle" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="ContentDate" valToField="" occ="1">
+                <element name="ContentDateRole" valToField=""/>
+                <!--Optional:-->
+                <element name="DateFormat" valToField=""/>
+                <element name="Date" busToField="Date" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+            </element>
+            <element name="CitedContent" valToField="" bus="1">
+              <element name="CitedContentType" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ContentAudience" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="SourceType" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="SourceTitle" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="ListName" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="PositionOnList" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="CitationNote" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="ResourceLink" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="ContentDate" valToField="" occ="1">
+                <element name="ContentDateRole" valToField=""/>
+                <!--Optional:-->
+                <element name="DateFormat" valToField=""/>
+                <element name="Date" busToField="Date" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="SupportingResource" valToField="" occ="1">
+              <element name="ResourceContentType" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="ContentAudience" valToField="" occ="1"/>
+              <element name="ResourceMode" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ResourceFeature" valToField="" occ="1">
+                <element name="ResourceFeatureType" valToField=""/>
+                <!--Optional:-->
+                <element name="FeatureValue" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="FeatureNote" valToField="" occ="1">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="block" valToField=""/>
+                  <element name="inline" valToField=""/>
+                </element>
+              </element>
+              <!--1 or more repetitions:-->
+              <element name="ResourceVersion" valToField="" occ="1">
+                <element name="ResourceForm" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="ResourceVersionFeature" valToField="" occ="1">
+                  <element name="ResourceVersionFeatureType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="FeatureValue" valToField=""/>
+                  <!--Zero or more repetitions:-->
+                  <element name="FeatureNote" valToField="" occ="1">
+                    <!--You have a CHOICE of the next 2 items at this level-->
+                    <element name="block" valToField=""/>
+                    <element name="inline" valToField=""/>
+                  </element>
+                </element>
+                <!--1 or more repetitions:-->
+                <element name="ResourceLink" valToField="" occ="1"/>
+                <!--Zero or more repetitions:-->
+                <element name="ContentDate" valToField="" occ="1">
+                  <element name="ContentDateRole" valToField=""/>
+                  <!--Optional:-->
+                  <element name="DateFormat" valToField=""/>
+                  <element name="Date" busToField="Date" valToField="" bus="1">
+                    <attribute name="dateformat" valToField=""/>
+                  </element>
+                </element>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="RelatedWork" valToField="" occ="1">
+              <element name="WorkRelationCode" valToField=""/>
+              <!--1 or more repetitions:-->
+              <element name="WorkIdentifier" valToField="" occ="1">
+                <element name="WorkIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+            </element>
+          </element>
+        </element>
+        <!--Optional:-->
+        <element name="PublishingDetail" valToField="" bus="1">
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--1 or more repetitions:-->
+          <element name="Imprint" valToField="" occ="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--1 or more repetitions:-->
+            <element name="ImprintIdentifier" valToField="" occ="1">
+              <element name="ImprintIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="ImprintName" valToField=""/>
+            <element name="ImprintName" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="Publisher" valToField="" occ="1">
+            <element name="PublishingRole" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--1 or more repetitions:-->
+            <element name="PublisherIdentifier" valToField="" occ="1">
+              <element name="PublisherIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="PublisherName" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="Website" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="WebsiteRole" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="WebsiteDescription" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <element name="WebsiteLink" valToField=""/>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="CityOfPublication" valToField="" occ="1"/>
+          <!--Optional:-->
+          <element name="CountryOfPublication" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="ProductContact" valToField="" occ="1">
+            <element name="ProductContactRole" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <!--1 or more repetitions:-->
+            <element name="ProductContactIdentifier" valToField="" occ="1">
+              <element name="ProductContactIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="ProductContactName" valToField=""/>
+            <!--Optional:-->
+            <element name="ContactName" valToField=""/>
+            <!--Optional:-->
+            <element name="EmailAddress" valToField=""/>
+          </element>
+          <element name="PublishingStatus" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="PublishingStatusNote" valToField="" occ="1">
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="block" valToField=""/>
+            <element name="inline" valToField=""/>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="PublishingDate" valToField="" occ="1">
+            <element name="PublishingDateRole" valToField=""/>
+            <!--Optional:-->
+            <element name="DateFormat" valToField=""/>
+            <element name="Date" busToField="Date" valToField="" bus="1">
+              <attribute name="dateformat" valToField=""/>
+            </element>
+          </element>
+          <!--Optional:-->
+          <element name="LatestReprintNumber" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="CopyrightStatement" valToField="" occ="1">
+            <!--Optional:-->
+            <element name="CopyrightType" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="CopyrightYear" busToField="CopyrightYear" valToField="" occ="1">
+              <attribute name="dateformat" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="CopyrightOwner" valToField="" occ="1">
+              <!--You have a CHOICE of the next 3 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="CopyrightOwnerIdentifier" valToField="" occ="1">
+                <element name="CopyrightOwnerIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="PersonName" valToField=""/>
+              <element name="CorporateName" valToField=""/>
+            </element>
+          </element>
+          <!--1 or more repetitions:-->
+          <element name="SalesRights" valToField="" occ="1">
+            <element name="SalesRightsType" valToField=""/>
+            <element name="Territory" valToField="" bus="1">
+              <element name="CountriesIncluded" valToField=""/>
+              <element name="RegionsIncluded" valToField=""/>
+              <element name="CountriesExcluded" valToField=""/>
+              <element name="RegionsExcluded" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="SalesRestriction" valToField="" occ="1">
+              <element name="SalesRestrictionType" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="SalesOutlet" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--1 or more repetitions:-->
+                <element name="SalesOutletIdentifier" valToField="" occ="1">
+                  <element name="SalesOutletIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="SalesOutletName" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="SalesRestrictionNote" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="StartDate" busToField="StartDate" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="EndDate" busToField="EndDate" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ProductIdentifier" valToField="" occ="1">
+              <element name="ProductIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="PublisherName" valToField=""/>
+          </element>
+          <!--Optional:-->
+          <element name="ROWSalesRightsType" valToField=""/>
+          <!--Zero or more repetitions:-->
+          <element name="SalesRestriction" valToField="" occ="1">
+            <element name="SalesRestrictionType" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="SalesOutlet" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="SalesOutletIdentifier" valToField="" occ="1">
+                <element name="SalesOutletIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="SalesOutletName" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="SalesRestrictionNote" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="StartDate" busToField="StartDate" valToField="" bus="1">
+              <attribute name="dateformat" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="EndDate" busToField="EndDate" valToField="" bus="1">
+              <attribute name="dateformat" valToField=""/>
+            </element>
+          </element>
+        </element>
+        <!--Optional:-->
+        <element name="RelatedMaterial" valToField="" bus="1">
+          <!--Zero or more repetitions:-->
+          <element name="RelatedWork" valToField="" occ="1">
+            <element name="WorkRelationCode" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="WorkIdentifier" valToField="" occ="1">
+              <element name="WorkIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+          </element>
+          <!--Zero or more repetitions:-->
+          <element name="RelatedProduct" valToField="" occ="1">
+            <!--1 or more repetitions:-->
+            <element name="ProductRelationCode" valToField="" occ="1"/>
+            <!--1 or more repetitions:-->
+            <element name="ProductIdentifier" valToField="" occ="1">
+              <element name="ProductIDType" valToField=""/>
+              <!--Optional:-->
+              <element name="IDTypeName" valToField=""/>
+              <element name="IDValue" valToField=""/>
+            </element>
+            <element name="ProductForm" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="ProductFormDetail" valToField="" occ="1"/>
+          </element>
+        </element>
+        <!--Zero or more repetitions:-->
+        <element name="ProductSupply" valToField="" occ="1">
+          <!--Zero or more repetitions:-->
+          <element name="Market" valToField="" occ="1">
+            <element name="Territory" valToField="" bus="1">
+              <element name="CountriesIncluded" valToField=""/>
+              <element name="RegionsIncluded" valToField=""/>
+              <element name="CountriesExcluded" valToField=""/>
+              <element name="RegionsExcluded" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="SalesRestriction" valToField="" occ="1">
+              <element name="SalesRestrictionType" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="SalesOutlet" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <!--1 or more repetitions:-->
+                <element name="SalesOutletIdentifier" valToField="" occ="1">
+                  <element name="SalesOutletIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="SalesOutletName" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="SalesRestrictionNote" valToField="" occ="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="StartDate" busToField="StartDate" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="EndDate" busToField="EndDate" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+          </element>
+          <!--Optional:-->
+          <element name="MarketPublishingDetail" valToField="" bus="1">
+            <!--Zero or more repetitions:-->
+            <element name="PublisherRepresentative" valToField="" occ="1">
+              <element name="AgentRole" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="AgentIdentifier" valToField="" occ="1">
+                <element name="AgentIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="AgentName" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="TelephoneNumber" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="FaxNumber" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="EmailAddress" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="Website" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="WebsiteRole" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="WebsiteDescription" valToField="" occ="1">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="block" valToField=""/>
+                  <element name="inline" valToField=""/>
+                </element>
+                <element name="WebsiteLink" valToField=""/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ProductContact" valToField="" occ="1">
+              <element name="ProductContactRole" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="ProductContactIdentifier" valToField="" occ="1">
+                <element name="ProductContactIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="ProductContactName" valToField=""/>
+              <!--Optional:-->
+              <element name="ContactName" valToField=""/>
+              <!--Optional:-->
+              <element name="EmailAddress" valToField=""/>
+            </element>
+            <element name="MarketPublishingStatus" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="MarketPublishingStatusNote" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="MarketDate" valToField="" occ="1">
+              <element name="MarketDateRole" valToField=""/>
+              <!--Optional:-->
+              <element name="DateFormat" valToField=""/>
+              <element name="Date" busToField="Date" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="PromotionCampaign" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="PromotionContact" valToField="" bus="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="InitialPrintRun" valToField="" occ="1"/>
+            <!--Zero or more repetitions:-->
+            <element name="ReprintDetail" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="CopiesSold" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="BookClubAdoption" valToField="" occ="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="block" valToField=""/>
+              <element name="inline" valToField=""/>
+            </element>
+          </element>
+          <!--1 or more repetitions:-->
+          <element name="SupplyDetail" valToField="" occ="1">
+            <element name="Supplier" valToField="" bus="1">
+              <element name="SupplierRole" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="SupplierIdentifier" valToField="" occ="1">
+                <element name="SupplierIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="SupplierName" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="TelephoneNumber" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="FaxNumber" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="EmailAddress" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="Website" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="WebsiteRole" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="WebsiteDescription" valToField="" occ="1">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="block" valToField=""/>
+                  <element name="inline" valToField=""/>
+                </element>
+                <element name="WebsiteLink" valToField=""/>
+              </element>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="SupplierOwnCoding" valToField="" occ="1">
+              <element name="SupplierCodeType" valToField=""/>
+              <!--Optional:-->
+              <element name="SupplierCodeTypeName" valToField=""/>
+              <element name="SupplierCodeValue" valToField=""/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="ReturnsConditions" valToField="" occ="1">
+              <element name="ReturnsCodeType" valToField=""/>
+              <!--Optional:-->
+              <element name="ReturnsCodeTypeName" valToField=""/>
+              <element name="ReturnsCode" valToField=""/>
+            </element>
+            <element name="ProductAvailability" valToField=""/>
+            <!--Zero or more repetitions:-->
+            <element name="SupplyDate" valToField="" occ="1">
+              <element name="SupplyDateRole" valToField=""/>
+              <!--Optional:-->
+              <element name="DateFormat" valToField=""/>
+              <element name="Date" busToField="Date" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+            </element>
+            <!--Optional:-->
+            <element name="OrderTime" valToField=""/>
+            <!--Optional:-->
+            <element name="NewSupplier" valToField="" bus="1">
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="SupplierIdentifier" valToField="" occ="1">
+                <element name="SupplierIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="SupplierName" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="TelephoneNumber" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="FaxNumber" valToField="" occ="1"/>
+              <!--Zero or more repetitions:-->
+              <element name="EmailAddress" valToField="" occ="1"/>
+            </element>
+            <!--Zero or more repetitions:-->
+            <element name="Stock" valToField="" occ="1">
+              <!--Optional:-->
+              <element name="LocationIdentifier" valToField="" bus="1">
+                <element name="LocationIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="LocationName" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <!--1 or more repetitions:-->
+              <element name="StockQuantityCoded" valToField="" occ="1">
+                <element name="StockQuantityCodeType" valToField=""/>
+                <!--Optional:-->
+                <element name="StockQuantityCodeTypeName" valToField=""/>
+                <element name="StockQuantityCode" valToField=""/>
+              </element>
+              <element name="OnHand" valToField=""/>
+              <!--Optional:-->
+              <element name="Proximity" valToField=""/>
+              <element name="OnOrder" valToField=""/>
+              <element name="CBO" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="OnOrderDetail" valToField="" occ="1">
+                <element name="OnOrder" valToField=""/>
+                <!--Optional:-->
+                <element name="Proximity" valToField=""/>
+                <element name="ExpectedDate" busToField="ExpectedDate" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="Velocity" valToField="" occ="1">
+                <element name="VelocityMetric" valToField=""/>
+                <element name="Rate" valToField=""/>
+                <!--Optional:-->
+                <element name="Proximity" valToField=""/>
+              </element>
+            </element>
+            <!--Optional:-->
+            <element name="PackQuantity" valToField=""/>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <element name="UnpricedItemType" valToField=""/>
+            <!--1 or more repetitions:-->
+            <element name="Price" valToField="" occ="1">
+              <!--Zero or more repetitions:-->
+              <element name="PriceIdentifier" valToField="" occ="1">
+                <element name="PriceIDType" valToField=""/>
+                <!--Optional:-->
+                <element name="IDTypeName" valToField=""/>
+                <element name="IDValue" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="PriceType" valToField=""/>
+              <!--Optional:-->
+              <element name="PriceQualifier" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="PriceTypeDescription" valToField="" occ="1"/>
+              <!--Optional:-->
+              <element name="PricePer" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="PriceCondition" valToField="" occ="1">
+                <element name="PriceConditionType" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="PriceConditionQuantity" valToField="" occ="1">
+                  <element name="PriceConditionQuantityType" valToField=""/>
+                  <element name="Quantity" valToField=""/>
+                  <element name="QuantityUnit" valToField=""/>
+                </element>
+                <!--Zero or more repetitions:-->
+                <element name="ProductIdentifier" valToField="" occ="1">
+                  <element name="ProductIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+              </element>
+              <!--Optional:-->
+              <element name="MinimumOrderQuantity" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="BatchBonus" valToField="" occ="1">
+                <element name="BatchQuantity" valToField=""/>
+                <element name="FreeQuantity" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="DiscountCoded" valToField="" occ="1">
+                <element name="DiscountCodeType" valToField=""/>
+                <!--Optional:-->
+                <element name="DiscountCodeTypeName" valToField=""/>
+                <element name="DiscountCode" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="Discount" valToField="" occ="1">
+                <!--Optional:-->
+                <element name="DiscountType" valToField=""/>
+                <element name="Quantity" valToField=""/>
+                <!--Optional:-->
+                <element name="ToQuantity" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="DiscountPercent" valToField=""/>
+                <!--Optional:-->
+                <element name="DiscountAmount" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="PriceStatus" valToField=""/>
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <element name="PriceAmount" valToField=""/>
+              <element name="PriceCoded" valToField="" bus="1">
+                <element name="PriceCodeType" valToField=""/>
+                <!--Optional:-->
+                <element name="PriceCodeTypeName" valToField=""/>
+                <element name="PriceCode" valToField=""/>
+              </element>
+              <element name="Tax" valToField="" bus="1">
+                <!--Optional:-->
+                <element name="TaxType" valToField=""/>
+                <!--Optional:-->
+                <element name="TaxRateCode" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="TaxRatePercent" valToField=""/>
+                <!--Optional:-->
+                <element name="TaxableAmount" valToField=""/>
+                <!--Optional:-->
+                <element name="TaxAmount" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="CurrencyCode" valToField=""/>
+              <element name="Territory" valToField="" bus="1">
+                <element name="CountriesIncluded" valToField=""/>
+                <element name="RegionsIncluded" valToField=""/>
+                <element name="CountriesExcluded" valToField=""/>
+                <element name="RegionsExcluded" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="CurrencyZone" valToField=""/>
+              <!--Zero or more repetitions:-->
+              <element name="ComparisonProductPrice" valToField="" occ="1">
+                <!--1 or more repetitions:-->
+                <element name="ProductIdentifier" valToField="" occ="1">
+                  <element name="ProductIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="PriceType" valToField=""/>
+                <element name="PriceAmount" valToField=""/>
+                <!--Optional:-->
+                <element name="CurrencyCode" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="PriceDate" valToField="" occ="1">
+                <element name="PriceDateRole" valToField=""/>
+                <!--Optional:-->
+                <element name="DateFormat" valToField=""/>
+                <element name="Date" busToField="Date" valToField="" bus="1">
+                  <attribute name="dateformat" valToField=""/>
+                </element>
+              </element>
+              <!--Optional:-->
+              <element name="PrintedOnProduct" valToField=""/>
+              <!--Optional:-->
+              <element name="PositionOnProduct" valToField=""/>
+            </element>
+            <!--Optional:-->
+            <element name="Reissue" valToField="" bus="1">
+              <element name="ReissueDate" busToField="ReissueDate" valToField="" bus="1">
+                <attribute name="dateformat" valToField=""/>
+              </element>
+              <!--Optional:-->
+              <element name="ReissueDescription" valToField="" bus="1">
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="block" valToField=""/>
+                <element name="inline" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="Price" valToField="" occ="1">
+                <!--Zero or more repetitions:-->
+                <element name="PriceIdentifier" valToField="" occ="1">
+                  <element name="PriceIDType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="IDTypeName" valToField=""/>
+                  <element name="IDValue" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="PriceType" valToField=""/>
+                <!--Optional:-->
+                <element name="PriceQualifier" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="PriceTypeDescription" valToField="" occ="1"/>
+                <!--Optional:-->
+                <element name="PricePer" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="PriceCondition" valToField="" occ="1">
+                  <element name="PriceConditionType" valToField=""/>
+                  <!--Zero or more repetitions:-->
+                  <element name="PriceConditionQuantity" valToField="" occ="1">
+                    <element name="PriceConditionQuantityType" valToField=""/>
+                    <element name="Quantity" valToField=""/>
+                    <element name="QuantityUnit" valToField=""/>
+                  </element>
+                  <!--Zero or more repetitions:-->
+                  <element name="ProductIdentifier" valToField="" occ="1">
+                    <element name="ProductIDType" valToField=""/>
+                    <!--Optional:-->
+                    <element name="IDTypeName" valToField=""/>
+                    <element name="IDValue" valToField=""/>
+                  </element>
+                </element>
+                <!--Optional:-->
+                <element name="MinimumOrderQuantity" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="BatchBonus" valToField="" occ="1">
+                  <element name="BatchQuantity" valToField=""/>
+                  <element name="FreeQuantity" valToField=""/>
+                </element>
+                <!--Zero or more repetitions:-->
+                <element name="DiscountCoded" valToField="" occ="1">
+                  <element name="DiscountCodeType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="DiscountCodeTypeName" valToField=""/>
+                  <element name="DiscountCode" valToField=""/>
+                </element>
+                <!--Zero or more repetitions:-->
+                <element name="Discount" valToField="" occ="1">
+                  <!--Optional:-->
+                  <element name="DiscountType" valToField=""/>
+                  <element name="Quantity" valToField=""/>
+                  <!--Optional:-->
+                  <element name="ToQuantity" valToField=""/>
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="DiscountPercent" valToField=""/>
+                  <!--Optional:-->
+                  <element name="DiscountAmount" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="PriceStatus" valToField=""/>
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <element name="PriceAmount" valToField=""/>
+                <element name="PriceCoded" valToField="" bus="1">
+                  <element name="PriceCodeType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="PriceCodeTypeName" valToField=""/>
+                  <element name="PriceCode" valToField=""/>
+                </element>
+                <element name="Tax" valToField="" bus="1">
+                  <!--Optional:-->
+                  <element name="TaxType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="TaxRateCode" valToField=""/>
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <element name="TaxRatePercent" valToField=""/>
+                  <!--Optional:-->
+                  <element name="TaxableAmount" valToField=""/>
+                  <!--Optional:-->
+                  <element name="TaxAmount" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="CurrencyCode" valToField=""/>
+                <element name="Territory" valToField="" bus="1">
+                  <element name="CountriesIncluded" valToField=""/>
+                  <element name="RegionsIncluded" valToField=""/>
+                  <element name="CountriesExcluded" valToField=""/>
+                  <element name="RegionsExcluded" valToField=""/>
+                </element>
+                <!--Optional:-->
+                <element name="CurrencyZone" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="ComparisonProductPrice" valToField="" occ="1">
+                  <!--1 or more repetitions:-->
+                  <element name="ProductIdentifier" valToField="" occ="1">
+                    <element name="ProductIDType" valToField=""/>
+                    <!--Optional:-->
+                    <element name="IDTypeName" valToField=""/>
+                    <element name="IDValue" valToField=""/>
+                  </element>
+                  <!--Optional:-->
+                  <element name="PriceType" valToField=""/>
+                  <element name="PriceAmount" valToField=""/>
+                  <!--Optional:-->
+                  <element name="CurrencyCode" valToField=""/>
+                </element>
+                <!--Zero or more repetitions:-->
+                <element name="PriceDate" valToField="" occ="1">
+                  <element name="PriceDateRole" valToField=""/>
+                  <!--Optional:-->
+                  <element name="DateFormat" valToField=""/>
+                  <element name="Date" busToField="Date" valToField="" bus="1">
+                    <attribute name="dateformat" valToField=""/>
+                  </element>
+                </element>
+                <!--Optional:-->
+                <element name="PrintedOnProduct" valToField=""/>
+                <!--Optional:-->
+                <element name="PositionOnProduct" valToField=""/>
+              </element>
+              <!--Zero or more repetitions:-->
+              <element name="SupportingResource" valToField="" occ="1">
+                <element name="ResourceContentType" valToField=""/>
+                <!--1 or more repetitions:-->
+                <element name="ContentAudience" valToField="" occ="1"/>
+                <element name="ResourceMode" valToField=""/>
+                <!--Zero or more repetitions:-->
+                <element name="ResourceFeature" valToField="" occ="1">
+                  <element name="ResourceFeatureType" valToField=""/>
+                  <!--Optional:-->
+                  <element name="FeatureValue" valToField=""/>
+                  <!--Zero or more repetitions:-->
+                  <element name="FeatureNote" valToField="" occ="1">
+                    <!--You have a CHOICE of the next 2 items at this level-->
+                    <element name="block" valToField=""/>
+                    <element name="inline" valToField=""/>
+                  </element>
+                </element>
+                <!--1 or more repetitions:-->
+                <element name="ResourceVersion" valToField="" occ="1">
+                  <element name="ResourceForm" valToField=""/>
+                  <!--Zero or more repetitions:-->
+                  <element name="ResourceVersionFeature" valToField="" occ="1">
+                    <element name="ResourceVersionFeatureType" valToField=""/>
+                    <!--Optional:-->
+                    <element name="FeatureValue" valToField=""/>
+                    <!--Zero or more repetitions:-->
+                    <element name="FeatureNote" valToField="" occ="1">
+                      <!--You have a CHOICE of the next 2 items at this level-->
+                      <element name="block" valToField=""/>
+                      <element name="inline" valToField=""/>
+                    </element>
+                  </element>
+                  <!--1 or more repetitions:-->
+                  <element name="ResourceLink" valToField="" occ="1"/>
+                  <!--Zero or more repetitions:-->
+                  <element name="ContentDate" valToField="" occ="1">
+                    <element name="ContentDateRole" valToField=""/>
+                    <!--Optional:-->
+                    <element name="DateFormat" valToField=""/>
+                    <element name="Date" busToField="Date" valToField="" bus="1">
+                      <attribute name="dateformat" valToField=""/>
+                    </element>
+                  </element>
+                </element>
+              </element>
+            </element>
+          </element>
+        </element>
+      </element>
+    </xmlfield>
+  </message>
+</protocol>

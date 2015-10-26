@@ -1,0 +1,1938 @@
+<?xml version="1.0"?>
+<Product xmlns="http://ns.editeur.org/onix/3.0/reference">
+  <RecordReference>?</RecordReference>
+  <NotificationType>?</NotificationType>
+  <!--Zero or more repetitions:-->
+  <DeletionText >?</DeletionText>
+  <!--Optional:-->
+  <RecordSourceType>?</RecordSourceType>
+  <!--Zero or more repetitions:-->
+  <RecordSourceIdentifier>
+    <RecordSourceIDType>?</RecordSourceIDType>
+    <!--Optional:-->
+    <IDTypeName >?</IDTypeName>
+    <IDValue>?</IDValue>
+  </RecordSourceIdentifier>
+  <!--Optional:-->
+  <RecordSourceName>?</RecordSourceName>
+  <!--1 or more repetitions:-->
+  <ProductIdentifier>
+    <ProductIDType>?</ProductIDType>
+    <!--Optional:-->
+    <IDTypeName >?</IDTypeName>
+    <IDValue>?</IDValue>
+  </ProductIdentifier>
+  <!--Zero or more repetitions:-->
+  <Barcode>
+    <BarcodeType>?</BarcodeType>
+    <!--Optional:-->
+    <PositionOnProduct>?</PositionOnProduct>
+  </Barcode>
+  <!--Optional:-->
+  <DescriptiveDetail>
+    <ProductComposition>?</ProductComposition>
+    <ProductForm>?</ProductForm>
+    <!--Zero or more repetitions:-->
+    <ProductFormDetail>?</ProductFormDetail>
+    <!--Zero or more repetitions:-->
+    <ProductFormFeature>
+      <ProductFormFeatureType>?</ProductFormFeatureType>
+      <!--Optional:-->
+      <ProductFormFeatureValue>?</ProductFormFeatureValue>
+      <!--Zero or more repetitions:-->
+      <ProductFormFeatureDescription >?</ProductFormFeatureDescription>
+    </ProductFormFeature>
+    <!--Optional:-->
+    <ProductPackaging>?</ProductPackaging>
+    <!--Zero or more repetitions:-->
+    <ProductFormDescription >?</ProductFormDescription>
+    <!--Optional:-->
+    <TradeCategory>?</TradeCategory>
+    <!--Optional:-->
+    <PrimaryContentType>?</PrimaryContentType>
+    <!--Zero or more repetitions:-->
+    <ProductContentType>?</ProductContentType>
+    <!--Zero or more repetitions:-->
+    <Measure>
+      <MeasureType>?</MeasureType>
+      <Measurement>?</Measurement>
+      <MeasureUnitCode>?</MeasureUnitCode>
+    </Measure>
+    <!--Optional:-->
+    <CountryOfManufacture>?</CountryOfManufacture>
+    <!--Zero or more repetitions:-->
+    <EpubTechnicalProtection>?</EpubTechnicalProtection>
+    <!--Zero or more repetitions:-->
+    <EpubUsageConstraint>
+      <EpubUsageType>?</EpubUsageType>
+      <EpubUsageStatus>?</EpubUsageStatus>
+      <!--Zero or more repetitions:-->
+      <EpubUsageLimit>
+        <Quantity>?</Quantity>
+        <EpubUsageUnit>?</EpubUsageUnit>
+      </EpubUsageLimit>
+    </EpubUsageConstraint>
+    <!--Optional:-->
+    <EpubLicense>
+      <!--1 or more repetitions:-->
+      <EpubLicenseName >?</EpubLicenseName>
+      <!--Zero or more repetitions:-->
+      <EpubLicenseExpression>
+        <EpubLicenseExpressionType>?</EpubLicenseExpressionType>
+        <!--Optional:-->
+        <EpubLicenseExpressionTypeName >?</EpubLicenseExpressionTypeName>
+        <EpubLicenseExpressionLink>?</EpubLicenseExpressionLink>
+      </EpubLicenseExpression>
+    </EpubLicense>
+    <!--Zero or more repetitions:-->
+    <MapScale>?</MapScale>
+    <!--Zero or more repetitions:-->
+    <ProductClassification>
+      <ProductClassificationType>?</ProductClassificationType>
+      <ProductClassificationCode>?</ProductClassificationCode>
+      <!--Optional:-->
+      <Percent>?</Percent>
+    </ProductClassification>
+    <!--Zero or more repetitions:-->
+    <ProductPart>
+      <!--Optional:-->
+      <PrimaryPart/>
+      <!--Zero or more repetitions:-->
+      <ProductIdentifier>
+        <ProductIDType>?</ProductIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </ProductIdentifier>
+      <ProductForm>?</ProductForm>
+      <!--Zero or more repetitions:-->
+      <ProductFormDetail>?</ProductFormDetail>
+      <!--Zero or more repetitions:-->
+      <ProductFormFeature>
+        <ProductFormFeatureType>?</ProductFormFeatureType>
+        <!--Optional:-->
+        <ProductFormFeatureValue>?</ProductFormFeatureValue>
+        <!--Zero or more repetitions:-->
+        <ProductFormFeatureDescription >?</ProductFormFeatureDescription>
+      </ProductFormFeature>
+      <!--Zero or more repetitions:-->
+      <ProductFormDescription >?</ProductFormDescription>
+      <!--Zero or more repetitions:-->
+      <ProductContentType>?</ProductContentType>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <NumberOfItemsOfThisForm>?</NumberOfItemsOfThisForm>
+      <NumberOfCopies>?</NumberOfCopies>
+      <!--Optional:-->
+      <CountryOfManufacture>?</CountryOfManufacture>
+    </ProductPart>
+    <!--You have a CHOICE of the next 2 items at this level-->
+    <!--1 or more repetitions:-->
+    <Collection>
+      <CollectionType>?</CollectionType>
+      <!--Optional:-->
+      <SourceName>?</SourceName>
+      <!--Zero or more repetitions:-->
+      <CollectionIdentifier>
+        <CollectionIDType>?</CollectionIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </CollectionIdentifier>
+      <!--Zero or more repetitions:-->
+      <CollectionSequence>
+        <CollectionSequenceType>?</CollectionSequenceType>
+        <!--Optional:-->
+        <CollectionSequenceTypeName >?</CollectionSequenceTypeName>
+        <CollectionSequenceNumber>?</CollectionSequenceNumber>
+      </CollectionSequence>
+      <!--Zero or more repetitions:-->
+      <TitleDetail>
+        <TitleType>?</TitleType>
+        <!--1 or more repetitions:-->
+        <TitleElement>
+          <!--Optional:-->
+          <SequenceNumber>?</SequenceNumber>
+          <TitleElementLevel>?</TitleElementLevel>
+          <!--You have a CHOICE of the next 4 items at this level-->
+          <PartNumber  >?</PartNumber>
+          <!--Optional:-->
+          <YearOfAnnual>?</YearOfAnnual>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <TitlePrefix    >?</TitlePrefix>
+          <NoPrefix/>
+          <TitleWithoutPrefix    >?</TitleWithoutPrefix>
+          <TitleText  textcase="?"  >?</TitleText>
+          <!--Optional:-->
+          <Subtitle    >?</Subtitle>
+        </TitleElement>
+        <!--Optional:-->
+        <TitleStatement  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </TitleStatement>
+      </TitleDetail>
+      <!--1 or more repetitions:-->
+      <Contributor>
+        <!--Optional:-->
+        <SequenceNumber>?</SequenceNumber>
+        <!--1 or more repetitions:-->
+        <ContributorRole>?</ContributorRole>
+        <!--Zero or more repetitions:-->
+        <FromLanguage>?</FromLanguage>
+        <!--Zero or more repetitions:-->
+        <ToLanguage>?</ToLanguage>
+        <!--Optional:-->
+        <NameType>?</NameType>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--You have a CHOICE of the next 5 items at this level-->
+        <!--1 or more repetitions:-->
+        <NameIdentifier>
+          <NameIDType>?</NameIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </NameIdentifier>
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <PersonName   >?</PersonName>
+        <!--Optional:-->
+        <PersonNameInverted   >?</PersonNameInverted>
+        <!--Optional:-->
+        <TitlesBeforeNames   >?</TitlesBeforeNames>
+        <!--Optional:-->
+        <NamesBeforeKey   >?</NamesBeforeKey>
+        <!--Optional:-->
+        <PrefixToKey   >?</PrefixToKey>
+        <KeyNames   >?</KeyNames>
+        <!--Optional:-->
+        <NamesAfterKey   >?</NamesAfterKey>
+        <!--Optional:-->
+        <SuffixToKey   >?</SuffixToKey>
+        <!--Optional:-->
+        <LettersAfterNames   >?</LettersAfterNames>
+        <!--Optional:-->
+        <TitlesAfterNames   >?</TitlesAfterNames>
+        <CorporateName   >?</CorporateName>
+        <!--Optional:-->
+        <CorporateNameInverted   >?</CorporateNameInverted>
+        <!--Zero or more repetitions:-->
+        <AlternativeName>
+          <NameType>?</NameType>
+          <!--You have a CHOICE of the next 5 items at this level-->
+          <!--1 or more repetitions:-->
+          <NameIdentifier>
+            <NameIDType>?</NameIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </NameIdentifier>
+          <!--You have a CHOICE of the next 4 items at this level-->
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <PersonName   >?</PersonName>
+          <!--Optional:-->
+          <PersonNameInverted   >?</PersonNameInverted>
+          <!--Optional:-->
+          <TitlesBeforeNames   >?</TitlesBeforeNames>
+          <!--Optional:-->
+          <NamesBeforeKey   >?</NamesBeforeKey>
+          <!--Optional:-->
+          <PrefixToKey   >?</PrefixToKey>
+          <KeyNames   >?</KeyNames>
+          <!--Optional:-->
+          <NamesAfterKey   >?</NamesAfterKey>
+          <!--Optional:-->
+          <SuffixToKey   >?</SuffixToKey>
+          <!--Optional:-->
+          <LettersAfterNames   >?</LettersAfterNames>
+          <!--Optional:-->
+          <TitlesAfterNames   >?</TitlesAfterNames>
+          <CorporateName   >?</CorporateName>
+          <!--Optional:-->
+          <CorporateNameInverted   >?</CorporateNameInverted>
+        </AlternativeName>
+        <!--Zero or more repetitions:-->
+        <ContributorDate>
+          <ContributorDateRole>?</ContributorDateRole>
+          <!--Optional:-->
+          <DateFormat>?</DateFormat>
+          <Date dateformat="?">?</Date>
+        </ContributorDate>
+        <!--Zero or more repetitions:-->
+        <ProfessionalAffiliation>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--1 or more repetitions:-->
+          <ProfessionalPosition >?</ProfessionalPosition>
+          <!--Optional:-->
+          <Affiliation >?</Affiliation>
+        </ProfessionalAffiliation>
+        <!--Zero or more repetitions:-->
+        <BiographicalNote  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </BiographicalNote>
+        <!--Zero or more repetitions:-->
+        <Website>
+          <!--Optional:-->
+          <WebsiteRole>?</WebsiteRole>
+          <!--Zero or more repetitions:-->
+          <WebsiteDescription  >
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <block>?</block>
+            <inline>?</inline>
+          </WebsiteDescription>
+          <WebsiteLink>?</WebsiteLink>
+        </Website>
+        <!--Zero or more repetitions:-->
+        <ContributorDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </ContributorDescription>
+        <UnnamedPersons>?</UnnamedPersons>
+        <!--Zero or more repetitions:-->
+        <ContributorPlace>
+          <ContributorPlaceRelator>?</ContributorPlaceRelator>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <CountryCode>?</CountryCode>
+          <!--Optional:-->
+          <RegionCode>?</RegionCode>
+          <!--Zero or more repetitions:-->
+          <LocationName >?</LocationName>
+        </ContributorPlace>
+      </Contributor>
+      <!--Zero or more repetitions:-->
+      <ContributorStatement  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </ContributorStatement>
+    </Collection>
+    <NoCollection/>
+    <!--1 or more repetitions:-->
+    <TitleDetail>
+      <TitleType>?</TitleType>
+      <TitleElement>
+        <!--Optional:-->
+        <SequenceNumber>?</SequenceNumber>
+        <TitleElementLevel>?</TitleElementLevel>
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <PartNumber  >?</PartNumber>
+        <!--Optional:-->
+        <YearOfAnnual>?</YearOfAnnual>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <TitlePrefix    >?</TitlePrefix>
+        <NoPrefix/>
+        <TitleWithoutPrefix    >?</TitleWithoutPrefix>
+        <TitleText  textcase="?"  >?</TitleText>
+        <!--Optional:-->
+        <Subtitle    >?</Subtitle>
+      </TitleElement>
+      <!--Optional:-->
+      <TitleStatement  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </TitleStatement>
+    </TitleDetail>
+    <ThesisType>?</ThesisType>
+    <!--Optional:-->
+    <ThesisPresentedTo >?</ThesisPresentedTo>
+    <!--Optional:-->
+    <ThesisYear dateformat="?">?</ThesisYear>
+    <!--You have a CHOICE of the next 2 items at this level-->
+    <Contributor>
+      <!--Optional:-->
+      <SequenceNumber>?</SequenceNumber>
+      <!--1 or more repetitions:-->
+      <ContributorRole>?</ContributorRole>
+      <!--Zero or more repetitions:-->
+      <FromLanguage>?</FromLanguage>
+      <!--Zero or more repetitions:-->
+      <ToLanguage>?</ToLanguage>
+      <!--Optional:-->
+      <NameType>?</NameType>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <!--You have a CHOICE of the next 5 items at this level-->
+      <!--1 or more repetitions:-->
+      <NameIdentifier>
+        <NameIDType>?</NameIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </NameIdentifier>
+      <!--You have a CHOICE of the next 4 items at this level-->
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <PersonName   >?</PersonName>
+      <!--Optional:-->
+      <PersonNameInverted   >?</PersonNameInverted>
+      <!--Optional:-->
+      <TitlesBeforeNames   >?</TitlesBeforeNames>
+      <!--Optional:-->
+      <NamesBeforeKey   >?</NamesBeforeKey>
+      <!--Optional:-->
+      <PrefixToKey   >?</PrefixToKey>
+      <KeyNames   >?</KeyNames>
+      <!--Optional:-->
+      <NamesAfterKey   >?</NamesAfterKey>
+      <!--Optional:-->
+      <SuffixToKey   >?</SuffixToKey>
+      <!--Optional:-->
+      <LettersAfterNames   >?</LettersAfterNames>
+      <!--Optional:-->
+      <TitlesAfterNames   >?</TitlesAfterNames>
+      <CorporateName   >?</CorporateName>
+      <!--Optional:-->
+      <CorporateNameInverted   >?</CorporateNameInverted>
+      <!--Zero or more repetitions:-->
+      <AlternativeName>
+        <NameType>?</NameType>
+        <!--You have a CHOICE of the next 5 items at this level-->
+        <!--1 or more repetitions:-->
+        <NameIdentifier>
+          <NameIDType>?</NameIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </NameIdentifier>
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <PersonName   >?</PersonName>
+        <!--Optional:-->
+        <PersonNameInverted   >?</PersonNameInverted>
+        <!--Optional:-->
+        <TitlesBeforeNames   >?</TitlesBeforeNames>
+        <!--Optional:-->
+        <NamesBeforeKey   >?</NamesBeforeKey>
+        <!--Optional:-->
+        <PrefixToKey   >?</PrefixToKey>
+        <KeyNames   >?</KeyNames>
+        <!--Optional:-->
+        <NamesAfterKey   >?</NamesAfterKey>
+        <!--Optional:-->
+        <SuffixToKey   >?</SuffixToKey>
+        <!--Optional:-->
+        <LettersAfterNames   >?</LettersAfterNames>
+        <!--Optional:-->
+        <TitlesAfterNames   >?</TitlesAfterNames>
+        <CorporateName   >?</CorporateName>
+        <!--Optional:-->
+        <CorporateNameInverted   >?</CorporateNameInverted>
+      </AlternativeName>
+      <!--Zero or more repetitions:-->
+      <ContributorDate>
+        <ContributorDateRole>?</ContributorDateRole>
+        <!--Optional:-->
+        <DateFormat>?</DateFormat>
+        <Date dateformat="?">?</Date>
+      </ContributorDate>
+      <!--Zero or more repetitions:-->
+      <ProfessionalAffiliation>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <ProfessionalPosition >?</ProfessionalPosition>
+        <!--Optional:-->
+        <Affiliation >?</Affiliation>
+      </ProfessionalAffiliation>
+      <!--Zero or more repetitions:-->
+      <BiographicalNote  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </BiographicalNote>
+      <!--Zero or more repetitions:-->
+      <Website>
+        <!--Optional:-->
+        <WebsiteRole>?</WebsiteRole>
+        <!--Zero or more repetitions:-->
+        <WebsiteDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </WebsiteDescription>
+        <WebsiteLink>?</WebsiteLink>
+      </Website>
+      <!--Zero or more repetitions:-->
+      <ContributorDescription  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </ContributorDescription>
+      <UnnamedPersons>?</UnnamedPersons>
+      <!--Zero or more repetitions:-->
+      <ContributorPlace>
+        <ContributorPlaceRelator>?</ContributorPlaceRelator>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <CountryCode>?</CountryCode>
+        <!--Optional:-->
+        <RegionCode>?</RegionCode>
+        <!--Zero or more repetitions:-->
+        <LocationName >?</LocationName>
+      </ContributorPlace>
+    </Contributor>
+    <!--Zero or more repetitions:-->
+    <ContributorStatement  >
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <block>?</block>
+      <inline>?</inline>
+    </ContributorStatement>
+    <!--Optional:-->
+    <NoContributor/>
+    <!--Zero or more repetitions:-->
+    <Conference>
+      <!--Optional:-->
+      <ConferenceRole>?</ConferenceRole>
+      <ConferenceName >?</ConferenceName>
+      <!--Optional:-->
+      <ConferenceAcronym>?</ConferenceAcronym>
+      <!--Optional:-->
+      <ConferenceNumber>?</ConferenceNumber>
+      <!--Optional:-->
+      <ConferenceTheme  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </ConferenceTheme>
+      <!--Optional:-->
+      <ConferenceDate dateformat="?">?</ConferenceDate>
+      <!--Optional:-->
+      <ConferencePlace >?</ConferencePlace>
+      <!--Zero or more repetitions:-->
+      <ConferenceSponsor>
+        <!--You have a CHOICE of the next 3 items at this level-->
+        <!--1 or more repetitions:-->
+        <ConferenceSponsorIdentifier>
+          <ConferenceSponsorIDType>?</ConferenceSponsorIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </ConferenceSponsorIdentifier>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <PersonName   >?</PersonName>
+        <CorporateName   >?</CorporateName>
+      </ConferenceSponsor>
+      <!--Zero or more repetitions:-->
+      <Website>
+        <!--Optional:-->
+        <WebsiteRole>?</WebsiteRole>
+        <!--Zero or more repetitions:-->
+        <WebsiteDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </WebsiteDescription>
+        <WebsiteLink>?</WebsiteLink>
+      </Website>
+    </Conference>
+    <!--You have a CHOICE of the next 2 items at this level-->
+    <!--Zero or more repetitions:-->
+    <EditionType>?</EditionType>
+    <EditionNumber>?</EditionNumber>
+    <!--Optional:-->
+    <EditionVersionNumber>?</EditionVersionNumber>
+    <!--Zero or more repetitions:-->
+    <EditionStatement  >
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <block>?</block>
+      <inline>?</inline>
+    </EditionStatement>
+    <!--Optional:-->
+    <NoEdition/>
+    <!--Optional:-->
+    <ReligiousText>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <Bible>
+        <!--1 or more repetitions:-->
+        <BibleContents>?</BibleContents>
+        <!--1 or more repetitions:-->
+        <BibleVersion>?</BibleVersion>
+        <!--Optional:-->
+        <StudyBibleType>?</StudyBibleType>
+        <!--Zero or more repetitions:-->
+        <BiblePurpose>?</BiblePurpose>
+        <!--Optional:-->
+        <BibleTextOrganization>?</BibleTextOrganization>
+        <!--Optional:-->
+        <BibleReferenceLocation>?</BibleReferenceLocation>
+        <!--Zero or more repetitions:-->
+        <BibleTextFeature>?</BibleTextFeature>
+      </Bible>
+      <ReligiousTextIdentifier>?</ReligiousTextIdentifier>
+      <!--1 or more repetitions:-->
+      <ReligiousTextFeature>
+        <ReligiousTextFeatureType>?</ReligiousTextFeatureType>
+        <ReligiousTextFeatureCode>?</ReligiousTextFeatureCode>
+        <!--Zero or more repetitions:-->
+        <ReligiousTextFeatureDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </ReligiousTextFeatureDescription>
+      </ReligiousTextFeature>
+    </ReligiousText>
+    <!--Zero or more repetitions:-->
+    <Language>
+      <LanguageRole>?</LanguageRole>
+      <LanguageCode>?</LanguageCode>
+      <!--Optional:-->
+      <CountryCode>?</CountryCode>
+      <!--Optional:-->
+      <ScriptCode>?</ScriptCode>
+    </Language>
+    <!--Zero or more repetitions:-->
+    <Extent>
+      <ExtentType>?</ExtentType>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <ExtentValue>?</ExtentValue>
+      <!--Optional:-->
+      <ExtentValueRoman>?</ExtentValueRoman>
+      <ExtentValueRoman>?</ExtentValueRoman>
+      <ExtentUnit>?</ExtentUnit>
+    </Extent>
+    <!--Optional:-->
+    <Illustrated>?</Illustrated>
+    <!--Optional:-->
+    <NumberOfIllustrations>?</NumberOfIllustrations>
+    <!--Zero or more repetitions:-->
+    <IllustrationsNote  >
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <block>?</block>
+      <inline>?</inline>
+    </IllustrationsNote>
+    <!--Zero or more repetitions:-->
+    <AncillaryContent>
+      <AncillaryContentType>?</AncillaryContentType>
+      <!--Zero or more repetitions:-->
+      <AncillaryContentDescription  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </AncillaryContentDescription>
+      <!--Optional:-->
+      <Number>?</Number>
+    </AncillaryContent>
+    <!--Zero or more repetitions:-->
+    <Subject>
+      <!--Optional:-->
+      <MainSubject/>
+      <SubjectSchemeIdentifier>?</SubjectSchemeIdentifier>
+      <!--Optional:-->
+      <SubjectSchemeName >?</SubjectSchemeName>
+      <!--Optional:-->
+      <SubjectSchemeVersion>?</SubjectSchemeVersion>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <SubjectCode>?</SubjectCode>
+      <!--Zero or more repetitions:-->
+      <SubjectHeadingText >?</SubjectHeadingText>
+    </Subject>
+    <NameAsSubject>
+      <!--Optional:-->
+      <NameType>?</NameType>
+      <!--1 or more repetitions:-->
+      <NameIdentifier>
+        <NameIDType>?</NameIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </NameIdentifier>
+      <PersonName   >?</PersonName>
+      <!--Optional:-->
+      <PersonNameInverted   >?</PersonNameInverted>
+      <!--Optional:-->
+      <TitlesBeforeNames   >?</TitlesBeforeNames>
+      <!--Optional:-->
+      <NamesBeforeKey   >?</NamesBeforeKey>
+      <!--Optional:-->
+      <PrefixToKey   >?</PrefixToKey>
+      <KeyNames   >?</KeyNames>
+      <!--Optional:-->
+      <NamesAfterKey   >?</NamesAfterKey>
+      <!--Optional:-->
+      <SuffixToKey   >?</SuffixToKey>
+      <!--Optional:-->
+      <LettersAfterNames   >?</LettersAfterNames>
+      <!--Optional:-->
+      <TitlesAfterNames   >?</TitlesAfterNames>
+      <CorporateName   >?</CorporateName>
+      <!--Optional:-->
+      <CorporateNameInverted   >?</CorporateNameInverted>
+    </NameAsSubject>
+    <!--Zero or more repetitions:-->
+    <AudienceCode>?</AudienceCode>
+    <!--Zero or more repetitions:-->
+    <Audience>
+      <AudienceCodeType>?</AudienceCodeType>
+      <!--Optional:-->
+      <AudienceCodeTypeName >?</AudienceCodeTypeName>
+      <AudienceCodeValue>?</AudienceCodeValue>
+    </Audience>
+    <!--Zero or more repetitions:-->
+    <AudienceRange>
+      <AudienceRangeQualifier>?</AudienceRangeQualifier>
+      <AudienceRangePrecision>?</AudienceRangePrecision>
+      <AudienceRangeValue>?</AudienceRangeValue>
+    </AudienceRange>
+    <!--Zero or more repetitions:-->
+    <AudienceDescription  >
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <block>?</block>
+      <inline>?</inline>
+    </AudienceDescription>
+    <!--Zero or more repetitions:-->
+    <Complexity>
+      <ComplexitySchemeIdentifier>?</ComplexitySchemeIdentifier>
+      <ComplexityCode>?</ComplexityCode>
+    </Complexity>
+  </DescriptiveDetail>
+  <!--Optional:-->
+  <CollateralDetail>
+    <!--Zero or more repetitions:-->
+    <TextContent>
+      <TextType>?</TextType>
+      <!--1 or more repetitions:-->
+      <ContentAudience>?</ContentAudience>
+      <!--1 or more repetitions:-->
+      <Text textformat="?" >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </Text>
+      <!--Zero or more repetitions:-->
+      <TextAuthor >?</TextAuthor>
+      <!--Optional:-->
+      <TextSourceCorporate >?</TextSourceCorporate>
+      <!--Zero or more repetitions:-->
+      <SourceTitle >?</SourceTitle>
+      <!--Zero or more repetitions:-->
+      <ContentDate>
+        <ContentDateRole>?</ContentDateRole>
+        <!--Optional:-->
+        <DateFormat>?</DateFormat>
+        <Date dateformat="?">?</Date>
+      </ContentDate>
+    </TextContent>
+    <CitedContent>
+      <CitedContentType>?</CitedContentType>
+      <!--Zero or more repetitions:-->
+      <ContentAudience>?</ContentAudience>
+      <!--Optional:-->
+      <SourceType>?</SourceType>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <!--1 or more repetitions:-->
+      <SourceTitle >?</SourceTitle>
+      <!--Zero or more repetitions:-->
+      <ListName >?</ListName>
+      <!--Optional:-->
+      <PositionOnList>?</PositionOnList>
+      <!--Zero or more repetitions:-->
+      <CitationNote  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </CitationNote>
+      <!--Zero or more repetitions:-->
+      <ResourceLink>?</ResourceLink>
+      <!--Zero or more repetitions:-->
+      <ContentDate>
+        <ContentDateRole>?</ContentDateRole>
+        <!--Optional:-->
+        <DateFormat>?</DateFormat>
+        <Date dateformat="?">?</Date>
+      </ContentDate>
+    </CitedContent>
+    <!--Zero or more repetitions:-->
+    <SupportingResource>
+      <ResourceContentType>?</ResourceContentType>
+      <!--1 or more repetitions:-->
+      <ContentAudience>?</ContentAudience>
+      <ResourceMode>?</ResourceMode>
+      <!--Zero or more repetitions:-->
+      <ResourceFeature>
+        <ResourceFeatureType>?</ResourceFeatureType>
+        <!--Optional:-->
+        <FeatureValue>?</FeatureValue>
+        <!--Zero or more repetitions:-->
+        <FeatureNote  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </FeatureNote>
+      </ResourceFeature>
+      <!--1 or more repetitions:-->
+      <ResourceVersion>
+        <ResourceForm>?</ResourceForm>
+        <!--Zero or more repetitions:-->
+        <ResourceVersionFeature>
+          <ResourceVersionFeatureType>?</ResourceVersionFeatureType>
+          <!--Optional:-->
+          <FeatureValue>?</FeatureValue>
+          <!--Zero or more repetitions:-->
+          <FeatureNote  >
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <block>?</block>
+            <inline>?</inline>
+          </FeatureNote>
+        </ResourceVersionFeature>
+        <!--1 or more repetitions:-->
+        <ResourceLink>?</ResourceLink>
+        <!--Zero or more repetitions:-->
+        <ContentDate>
+          <ContentDateRole>?</ContentDateRole>
+          <!--Optional:-->
+          <DateFormat>?</DateFormat>
+          <Date dateformat="?">?</Date>
+        </ContentDate>
+      </ResourceVersion>
+    </SupportingResource>
+    <!--Zero or more repetitions:-->
+    <Prize>
+      <!--1 or more repetitions:-->
+      <PrizeName >?</PrizeName>
+      <!--Optional:-->
+      <PrizeYear>?</PrizeYear>
+      <!--Optional:-->
+      <PrizeCountry>?</PrizeCountry>
+      <!--Optional:-->
+      <PrizeCode>?</PrizeCode>
+      <!--Zero or more repetitions:-->
+      <PrizeStatement >?</PrizeStatement>
+      <!--Zero or more repetitions:-->
+      <PrizeJury  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </PrizeJury>
+    </Prize>
+  </CollateralDetail>
+  <!--Optional:-->
+  <ContentDetail>
+    <!--1 or more repetitions:-->
+    <ContentItem>
+      <!--Optional:-->
+      <LevelSequenceNumber>?</LevelSequenceNumber>
+      <TextItem>
+        <TextItemType>?</TextItemType>
+        <!--Zero or more repetitions:-->
+        <TextItemIdentifier>
+          <TextItemIDType>?</TextItemIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </TextItemIdentifier>
+        <!--Zero or more repetitions:-->
+        <PageRun>
+          <FirstPageNumber>?</FirstPageNumber>
+          <!--Optional:-->
+          <LastPageNumber>?</LastPageNumber>
+        </PageRun>
+        <!--Optional:-->
+        <NumberOfPages>?</NumberOfPages>
+      </TextItem>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <ComponentTypeName >?</ComponentTypeName>
+      <!--Optional:-->
+      <ComponentNumber>?</ComponentNumber>
+      <!--Zero or more repetitions:-->
+      <TitleDetail>
+        <TitleType>?</TitleType>
+        <!--1 or more repetitions:-->
+        <TitleElement>
+          <!--Optional:-->
+          <SequenceNumber>?</SequenceNumber>
+          <TitleElementLevel>?</TitleElementLevel>
+          <!--You have a CHOICE of the next 4 items at this level-->
+          <PartNumber  >?</PartNumber>
+          <!--Optional:-->
+          <YearOfAnnual>?</YearOfAnnual>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <TitlePrefix    >?</TitlePrefix>
+          <NoPrefix/>
+          <TitleWithoutPrefix    >?</TitleWithoutPrefix>
+          <TitleText    >?</TitleText>
+          <!--Optional:-->
+          <Subtitle    >?</Subtitle>
+        </TitleElement>
+        <!--Optional:-->
+        <TitleStatement  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </TitleStatement>
+      </TitleDetail>
+      <!--Optional:-->
+      <ComponentNumber>?</ComponentNumber>
+      <!--1 or more repetitions:-->
+      <TitleDetail>
+        <TitleType>?</TitleType>
+        <TitleElement>
+          <!--Optional:-->
+          <SequenceNumber>?</SequenceNumber>
+          <TitleElementLevel>?</TitleElementLevel>
+          <!--You have a CHOICE of the next 4 items at this level-->
+          <PartNumber  >?</PartNumber>
+          <!--Optional:-->
+          <YearOfAnnual>?</YearOfAnnual>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <TitlePrefix    >?</TitlePrefix>
+          <NoPrefix/>
+          <TitleWithoutPrefix    >?</TitleWithoutPrefix>
+          <TitleText    >?</TitleText>
+          <!--Optional:-->
+          <Subtitle    >?</Subtitle>
+        </TitleElement>
+        <!--Optional:-->
+        <TitleStatement  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </TitleStatement>
+      </TitleDetail>
+      <Contributor>
+        <!--Optional:-->
+        <SequenceNumber>?</SequenceNumber>
+        <!--1 or more repetitions:-->
+        <ContributorRole>?</ContributorRole>
+        <!--Zero or more repetitions:-->
+        <FromLanguage>?</FromLanguage>
+        <!--Zero or more repetitions:-->
+        <ToLanguage>?</ToLanguage>
+        <!--Optional:-->
+        <NameType>?</NameType>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--You have a CHOICE of the next 5 items at this level-->
+        <!--1 or more repetitions:-->
+        <NameIdentifier>
+          <NameIDType>?</NameIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </NameIdentifier>
+        <!--You have a CHOICE of the next 4 items at this level-->
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <PersonName   >?</PersonName>
+        <!--Optional:-->
+        <PersonNameInverted   >?</PersonNameInverted>
+        <!--Optional:-->
+        <TitlesBeforeNames   >?</TitlesBeforeNames>
+        <!--Optional:-->
+        <NamesBeforeKey   >?</NamesBeforeKey>
+        <!--Optional:-->
+        <PrefixToKey   >?</PrefixToKey>
+        <KeyNames   >?</KeyNames>
+        <!--Optional:-->
+        <NamesAfterKey   >?</NamesAfterKey>
+        <!--Optional:-->
+        <SuffixToKey   >?</SuffixToKey>
+        <!--Optional:-->
+        <LettersAfterNames   >?</LettersAfterNames>
+        <!--Optional:-->
+        <TitlesAfterNames   >?</TitlesAfterNames>
+        <CorporateName   >?</CorporateName>
+        <!--Optional:-->
+        <CorporateNameInverted   >?</CorporateNameInverted>
+        <!--Zero or more repetitions:-->
+        <AlternativeName>
+          <NameType>?</NameType>
+          <!--You have a CHOICE of the next 5 items at this level-->
+          <!--1 or more repetitions:-->
+          <NameIdentifier>
+            <NameIDType>?</NameIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </NameIdentifier>
+          <!--You have a CHOICE of the next 4 items at this level-->
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <PersonName   >?</PersonName>
+          <!--Optional:-->
+          <PersonNameInverted   >?</PersonNameInverted>
+          <!--Optional:-->
+          <TitlesBeforeNames   >?</TitlesBeforeNames>
+          <!--Optional:-->
+          <NamesBeforeKey   >?</NamesBeforeKey>
+          <!--Optional:-->
+          <PrefixToKey   >?</PrefixToKey>
+          <KeyNames   >?</KeyNames>
+          <!--Optional:-->
+          <NamesAfterKey   >?</NamesAfterKey>
+          <!--Optional:-->
+          <SuffixToKey   >?</SuffixToKey>
+          <!--Optional:-->
+          <LettersAfterNames   >?</LettersAfterNames>
+          <!--Optional:-->
+          <TitlesAfterNames   >?</TitlesAfterNames>
+          <CorporateName   >?</CorporateName>
+          <!--Optional:-->
+          <CorporateNameInverted   >?</CorporateNameInverted>
+        </AlternativeName>
+        <!--Zero or more repetitions:-->
+        <ContributorDate>
+          <ContributorDateRole>?</ContributorDateRole>
+          <!--Optional:-->
+          <DateFormat>?</DateFormat>
+          <Date dateformat="?">?</Date>
+        </ContributorDate>
+        <!--Zero or more repetitions:-->
+        <ProfessionalAffiliation>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--1 or more repetitions:-->
+          <ProfessionalPosition >?</ProfessionalPosition>
+          <!--Optional:-->
+          <Affiliation >?</Affiliation>
+        </ProfessionalAffiliation>
+        <!--Zero or more repetitions:-->
+        <BiographicalNote  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </BiographicalNote>
+        <!--Zero or more repetitions:-->
+        <Website>
+          <!--Optional:-->
+          <WebsiteRole>?</WebsiteRole>
+          <!--Zero or more repetitions:-->
+          <WebsiteDescription  >
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <block>?</block>
+            <inline>?</inline>
+          </WebsiteDescription>
+          <WebsiteLink>?</WebsiteLink>
+        </Website>
+        <!--Zero or more repetitions:-->
+        <ContributorDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </ContributorDescription>
+        <UnnamedPersons>?</UnnamedPersons>
+        <!--Zero or more repetitions:-->
+        <ContributorPlace>
+          <ContributorPlaceRelator>?</ContributorPlaceRelator>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <CountryCode>?</CountryCode>
+          <!--Optional:-->
+          <RegionCode>?</RegionCode>
+          <!--Zero or more repetitions:-->
+          <LocationName >?</LocationName>
+        </ContributorPlace>
+      </Contributor>
+      <!--Zero or more repetitions:-->
+      <Subject>
+        <!--Optional:-->
+        <MainSubject/>
+        <SubjectSchemeIdentifier>?</SubjectSchemeIdentifier>
+        <!--Optional:-->
+        <SubjectSchemeName >?</SubjectSchemeName>
+        <!--Optional:-->
+        <SubjectSchemeVersion>?</SubjectSchemeVersion>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <SubjectCode>?</SubjectCode>
+        <!--Zero or more repetitions:-->
+        <SubjectHeadingText >?</SubjectHeadingText>
+      </Subject>
+      <NameAsSubject>
+        <!--Optional:-->
+        <NameType>?</NameType>
+        <!--1 or more repetitions:-->
+        <NameIdentifier>
+          <NameIDType>?</NameIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </NameIdentifier>
+        <PersonName   >?</PersonName>
+        <!--Optional:-->
+        <PersonNameInverted   >?</PersonNameInverted>
+        <!--Optional:-->
+        <TitlesBeforeNames   >?</TitlesBeforeNames>
+        <!--Optional:-->
+        <NamesBeforeKey   >?</NamesBeforeKey>
+        <!--Optional:-->
+        <PrefixToKey   >?</PrefixToKey>
+        <KeyNames   >?</KeyNames>
+        <!--Optional:-->
+        <NamesAfterKey   >?</NamesAfterKey>
+        <!--Optional:-->
+        <SuffixToKey   >?</SuffixToKey>
+        <!--Optional:-->
+        <LettersAfterNames   >?</LettersAfterNames>
+        <!--Optional:-->
+        <TitlesAfterNames   >?</TitlesAfterNames>
+        <CorporateName   >?</CorporateName>
+        <!--Optional:-->
+        <CorporateNameInverted   >?</CorporateNameInverted>
+      </NameAsSubject>
+      <!--Zero or more repetitions:-->
+      <TextContent>
+        <TextType>?</TextType>
+        <!--1 or more repetitions:-->
+        <ContentAudience>?</ContentAudience>
+        <!--1 or more repetitions:-->
+        <Text  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </Text>
+        <!--Zero or more repetitions:-->
+        <TextAuthor >?</TextAuthor>
+        <!--Optional:-->
+        <TextSourceCorporate >?</TextSourceCorporate>
+        <!--Zero or more repetitions:-->
+        <SourceTitle >?</SourceTitle>
+        <!--Zero or more repetitions:-->
+        <ContentDate>
+          <ContentDateRole>?</ContentDateRole>
+          <!--Optional:-->
+          <DateFormat>?</DateFormat>
+          <Date dateformat="?">?</Date>
+        </ContentDate>
+      </TextContent>
+      <CitedContent>
+        <CitedContentType>?</CitedContentType>
+        <!--Zero or more repetitions:-->
+        <ContentAudience>?</ContentAudience>
+        <!--Optional:-->
+        <SourceType>?</SourceType>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <SourceTitle >?</SourceTitle>
+        <!--Zero or more repetitions:-->
+        <ListName >?</ListName>
+        <!--Optional:-->
+        <PositionOnList>?</PositionOnList>
+        <!--Zero or more repetitions:-->
+        <CitationNote  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </CitationNote>
+        <!--Zero or more repetitions:-->
+        <ResourceLink>?</ResourceLink>
+        <!--Zero or more repetitions:-->
+        <ContentDate>
+          <ContentDateRole>?</ContentDateRole>
+          <!--Optional:-->
+          <DateFormat>?</DateFormat>
+          <Date dateformat="?">?</Date>
+        </ContentDate>
+      </CitedContent>
+      <!--Zero or more repetitions:-->
+      <SupportingResource>
+        <ResourceContentType>?</ResourceContentType>
+        <!--1 or more repetitions:-->
+        <ContentAudience>?</ContentAudience>
+        <ResourceMode>?</ResourceMode>
+        <!--Zero or more repetitions:-->
+        <ResourceFeature>
+          <ResourceFeatureType>?</ResourceFeatureType>
+          <!--Optional:-->
+          <FeatureValue>?</FeatureValue>
+          <!--Zero or more repetitions:-->
+          <FeatureNote  >
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <block>?</block>
+            <inline>?</inline>
+          </FeatureNote>
+        </ResourceFeature>
+        <!--1 or more repetitions:-->
+        <ResourceVersion>
+          <ResourceForm>?</ResourceForm>
+          <!--Zero or more repetitions:-->
+          <ResourceVersionFeature>
+            <ResourceVersionFeatureType>?</ResourceVersionFeatureType>
+            <!--Optional:-->
+            <FeatureValue>?</FeatureValue>
+            <!--Zero or more repetitions:-->
+            <FeatureNote  >
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <block>?</block>
+              <inline>?</inline>
+            </FeatureNote>
+          </ResourceVersionFeature>
+          <!--1 or more repetitions:-->
+          <ResourceLink>?</ResourceLink>
+          <!--Zero or more repetitions:-->
+          <ContentDate>
+            <ContentDateRole>?</ContentDateRole>
+            <!--Optional:-->
+            <DateFormat>?</DateFormat>
+            <Date dateformat="?">?</Date>
+          </ContentDate>
+        </ResourceVersion>
+      </SupportingResource>
+      <!--Zero or more repetitions:-->
+      <RelatedWork>
+        <WorkRelationCode>?</WorkRelationCode>
+        <!--1 or more repetitions:-->
+        <WorkIdentifier>
+          <WorkIDType>?</WorkIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </WorkIdentifier>
+      </RelatedWork>
+    </ContentItem>
+  </ContentDetail>
+  <!--Optional:-->
+  <PublishingDetail>
+    <!--You have a CHOICE of the next 2 items at this level-->
+    <!--1 or more repetitions:-->
+    <Imprint>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <!--1 or more repetitions:-->
+      <ImprintIdentifier>
+        <ImprintIDType>?</ImprintIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </ImprintIdentifier>
+      <!--Optional:-->
+      <ImprintName >?</ImprintName>
+      <ImprintName >?</ImprintName>
+    </Imprint>
+    <!--Zero or more repetitions:-->
+    <Publisher>
+      <PublishingRole>?</PublishingRole>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <!--1 or more repetitions:-->
+      <PublisherIdentifier>
+        <PublisherIDType>?</PublisherIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </PublisherIdentifier>
+      <!--Optional:-->
+      <PublisherName >?</PublisherName>
+      <!--Zero or more repetitions:-->
+      <Website>
+        <!--Optional:-->
+        <WebsiteRole>?</WebsiteRole>
+        <!--Zero or more repetitions:-->
+        <WebsiteDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </WebsiteDescription>
+        <WebsiteLink>?</WebsiteLink>
+      </Website>
+    </Publisher>
+    <!--Zero or more repetitions:-->
+    <CityOfPublication >?</CityOfPublication>
+    <!--Optional:-->
+    <CountryOfPublication>?</CountryOfPublication>
+    <!--Zero or more repetitions:-->
+    <ProductContact>
+      <ProductContactRole>?</ProductContactRole>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <!--1 or more repetitions:-->
+      <ProductContactIdentifier>
+        <ProductContactIDType>?</ProductContactIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </ProductContactIdentifier>
+      <!--Optional:-->
+      <ProductContactName>?</ProductContactName>
+      <!--Optional:-->
+      <ContactName>?</ContactName>
+      <!--Optional:-->
+      <EmailAddress>?</EmailAddress>
+    </ProductContact>
+    <PublishingStatus>?</PublishingStatus>
+    <!--Zero or more repetitions:-->
+    <PublishingStatusNote  >
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <block>?</block>
+      <inline>?</inline>
+    </PublishingStatusNote>
+    <!--Zero or more repetitions:-->
+    <PublishingDate>
+      <PublishingDateRole>?</PublishingDateRole>
+      <!--Optional:-->
+      <DateFormat>?</DateFormat>
+      <Date dateformat="?">?</Date>
+    </PublishingDate>
+    <!--Optional:-->
+    <LatestReprintNumber>?</LatestReprintNumber>
+    <!--Zero or more repetitions:-->
+    <CopyrightStatement>
+      <!--Optional:-->
+      <CopyrightType>?</CopyrightType>
+      <!--1 or more repetitions:-->
+      <CopyrightYear dateformat="?">?</CopyrightYear>
+      <!--Zero or more repetitions:-->
+      <CopyrightOwner>
+        <!--You have a CHOICE of the next 3 items at this level-->
+        <!--1 or more repetitions:-->
+        <CopyrightOwnerIdentifier>
+          <CopyrightOwnerIDType>?</CopyrightOwnerIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </CopyrightOwnerIdentifier>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <PersonName   >?</PersonName>
+        <CorporateName   >?</CorporateName>
+      </CopyrightOwner>
+    </CopyrightStatement>
+    <!--1 or more repetitions:-->
+    <SalesRights>
+      <SalesRightsType>?</SalesRightsType>
+      <Territory>
+        <CountriesIncluded>?</CountriesIncluded>
+        <RegionsIncluded>?</RegionsIncluded>
+        <CountriesExcluded>?</CountriesExcluded>
+        <RegionsExcluded>?</RegionsExcluded>
+      </Territory>
+      <!--Zero or more repetitions:-->
+      <SalesRestriction>
+        <SalesRestrictionType>?</SalesRestrictionType>
+        <!--Zero or more repetitions:-->
+        <SalesOutlet>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--1 or more repetitions:-->
+          <SalesOutletIdentifier>
+            <SalesOutletIDType>?</SalesOutletIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </SalesOutletIdentifier>
+          <!--Optional:-->
+          <SalesOutletName >?</SalesOutletName>
+        </SalesOutlet>
+        <!--Zero or more repetitions:-->
+        <SalesRestrictionNote  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </SalesRestrictionNote>
+        <!--Optional:-->
+        <StartDate dateformat="?">?</StartDate>
+        <!--Optional:-->
+        <EndDate dateformat="?">?</EndDate>
+      </SalesRestriction>
+      <!--Zero or more repetitions:-->
+      <ProductIdentifier>
+        <ProductIDType>?</ProductIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </ProductIdentifier>
+      <!--Optional:-->
+      <PublisherName >?</PublisherName>
+    </SalesRights>
+    <!--Optional:-->
+    <ROWSalesRightsType>?</ROWSalesRightsType>
+    <!--Zero or more repetitions:-->
+    <SalesRestriction>
+      <SalesRestrictionType>?</SalesRestrictionType>
+      <!--Zero or more repetitions:-->
+      <SalesOutlet>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <SalesOutletIdentifier>
+          <SalesOutletIDType>?</SalesOutletIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </SalesOutletIdentifier>
+        <!--Optional:-->
+        <SalesOutletName >?</SalesOutletName>
+      </SalesOutlet>
+      <!--Zero or more repetitions:-->
+      <SalesRestrictionNote  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </SalesRestrictionNote>
+      <!--Optional:-->
+      <StartDate dateformat="?">?</StartDate>
+      <!--Optional:-->
+      <EndDate dateformat="?">?</EndDate>
+    </SalesRestriction>
+  </PublishingDetail>
+  <!--Optional:-->
+  <RelatedMaterial>
+    <!--Zero or more repetitions:-->
+    <RelatedWork>
+      <WorkRelationCode>?</WorkRelationCode>
+      <!--1 or more repetitions:-->
+      <WorkIdentifier>
+        <WorkIDType>?</WorkIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </WorkIdentifier>
+    </RelatedWork>
+    <!--Zero or more repetitions:-->
+    <RelatedProduct>
+      <!--1 or more repetitions:-->
+      <ProductRelationCode>?</ProductRelationCode>
+      <!--1 or more repetitions:-->
+      <ProductIdentifier>
+        <ProductIDType>?</ProductIDType>
+        <!--Optional:-->
+        <IDTypeName >?</IDTypeName>
+        <IDValue>?</IDValue>
+      </ProductIdentifier>
+      <ProductForm>?</ProductForm>
+      <!--Zero or more repetitions:-->
+      <ProductFormDetail>?</ProductFormDetail>
+    </RelatedProduct>
+  </RelatedMaterial>
+  <!--Zero or more repetitions:-->
+  <ProductSupply>
+    <!--Zero or more repetitions:-->
+    <Market>
+      <Territory>
+        <CountriesIncluded>?</CountriesIncluded>
+        <RegionsIncluded>?</RegionsIncluded>
+        <CountriesExcluded>?</CountriesExcluded>
+        <RegionsExcluded>?</RegionsExcluded>
+      </Territory>
+      <!--Zero or more repetitions:-->
+      <SalesRestriction>
+        <SalesRestrictionType>?</SalesRestrictionType>
+        <!--Zero or more repetitions:-->
+        <SalesOutlet>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <!--1 or more repetitions:-->
+          <SalesOutletIdentifier>
+            <SalesOutletIDType>?</SalesOutletIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </SalesOutletIdentifier>
+          <!--Optional:-->
+          <SalesOutletName >?</SalesOutletName>
+        </SalesOutlet>
+        <!--Zero or more repetitions:-->
+        <SalesRestrictionNote  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </SalesRestrictionNote>
+        <!--Optional:-->
+        <StartDate dateformat="?">?</StartDate>
+        <!--Optional:-->
+        <EndDate dateformat="?">?</EndDate>
+      </SalesRestriction>
+    </Market>
+    <!--Optional:-->
+    <MarketPublishingDetail>
+      <!--Zero or more repetitions:-->
+      <PublisherRepresentative>
+        <AgentRole>?</AgentRole>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <AgentIdentifier>
+          <AgentIDType>?</AgentIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </AgentIdentifier>
+        <!--Optional:-->
+        <AgentName >?</AgentName>
+        <!--Zero or more repetitions:-->
+        <TelephoneNumber>?</TelephoneNumber>
+        <!--Zero or more repetitions:-->
+        <FaxNumber>?</FaxNumber>
+        <!--Zero or more repetitions:-->
+        <EmailAddress>?</EmailAddress>
+        <!--Zero or more repetitions:-->
+        <Website>
+          <!--Optional:-->
+          <WebsiteRole>?</WebsiteRole>
+          <!--Zero or more repetitions:-->
+          <WebsiteDescription  >
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <block>?</block>
+            <inline>?</inline>
+          </WebsiteDescription>
+          <WebsiteLink>?</WebsiteLink>
+        </Website>
+      </PublisherRepresentative>
+      <!--Zero or more repetitions:-->
+      <ProductContact>
+        <ProductContactRole>?</ProductContactRole>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <ProductContactIdentifier>
+          <ProductContactIDType>?</ProductContactIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </ProductContactIdentifier>
+        <!--Optional:-->
+        <ProductContactName>?</ProductContactName>
+        <!--Optional:-->
+        <ContactName>?</ContactName>
+        <!--Optional:-->
+        <EmailAddress>?</EmailAddress>
+      </ProductContact>
+      <MarketPublishingStatus>?</MarketPublishingStatus>
+      <!--Zero or more repetitions:-->
+      <MarketPublishingStatusNote  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </MarketPublishingStatusNote>
+      <!--Zero or more repetitions:-->
+      <MarketDate>
+        <MarketDateRole>?</MarketDateRole>
+        <!--Optional:-->
+        <DateFormat>?</DateFormat>
+        <Date dateformat="?">?</Date>
+      </MarketDate>
+      <!--Zero or more repetitions:-->
+      <PromotionCampaign  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </PromotionCampaign>
+      <!--Optional:-->
+      <PromotionContact  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </PromotionContact>
+      <!--Zero or more repetitions:-->
+      <InitialPrintRun  >?</InitialPrintRun>
+      <!--Zero or more repetitions:-->
+      <ReprintDetail  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </ReprintDetail>
+      <!--Zero or more repetitions:-->
+      <CopiesSold  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </CopiesSold>
+      <!--Zero or more repetitions:-->
+      <BookClubAdoption  >
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <block>?</block>
+        <inline>?</inline>
+      </BookClubAdoption>
+    </MarketPublishingDetail>
+    <!--1 or more repetitions:-->
+    <SupplyDetail>
+      <Supplier>
+        <SupplierRole>?</SupplierRole>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <SupplierIdentifier>
+          <SupplierIDType>?</SupplierIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </SupplierIdentifier>
+        <!--Optional:-->
+        <SupplierName >?</SupplierName>
+        <!--Zero or more repetitions:-->
+        <TelephoneNumber>?</TelephoneNumber>
+        <!--Zero or more repetitions:-->
+        <FaxNumber>?</FaxNumber>
+        <!--Zero or more repetitions:-->
+        <EmailAddress>?</EmailAddress>
+        <!--Zero or more repetitions:-->
+        <Website>
+          <!--Optional:-->
+          <WebsiteRole>?</WebsiteRole>
+          <!--Zero or more repetitions:-->
+          <WebsiteDescription  >
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <block>?</block>
+            <inline>?</inline>
+          </WebsiteDescription>
+          <WebsiteLink>?</WebsiteLink>
+        </Website>
+      </Supplier>
+      <!--Zero or more repetitions:-->
+      <SupplierOwnCoding>
+        <SupplierCodeType>?</SupplierCodeType>
+        <!--Optional:-->
+        <SupplierCodeTypeName >?</SupplierCodeTypeName>
+        <SupplierCodeValue>?</SupplierCodeValue>
+      </SupplierOwnCoding>
+      <!--Zero or more repetitions:-->
+      <ReturnsConditions>
+        <ReturnsCodeType>?</ReturnsCodeType>
+        <!--Optional:-->
+        <ReturnsCodeTypeName >?</ReturnsCodeTypeName>
+        <ReturnsCode>?</ReturnsCode>
+      </ReturnsConditions>
+      <ProductAvailability>?</ProductAvailability>
+      <!--Zero or more repetitions:-->
+      <SupplyDate>
+        <SupplyDateRole>?</SupplyDateRole>
+        <!--Optional:-->
+        <DateFormat>?</DateFormat>
+        <Date dateformat="?">?</Date>
+      </SupplyDate>
+      <!--Optional:-->
+      <OrderTime>?</OrderTime>
+      <!--Optional:-->
+      <NewSupplier>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <SupplierIdentifier>
+          <SupplierIDType>?</SupplierIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </SupplierIdentifier>
+        <!--Optional:-->
+        <SupplierName >?</SupplierName>
+        <!--Zero or more repetitions:-->
+        <TelephoneNumber>?</TelephoneNumber>
+        <!--Zero or more repetitions:-->
+        <FaxNumber>?</FaxNumber>
+        <!--Zero or more repetitions:-->
+        <EmailAddress>?</EmailAddress>
+      </NewSupplier>
+      <!--Zero or more repetitions:-->
+      <Stock>
+        <!--Optional:-->
+        <LocationIdentifier>
+          <LocationIDType>?</LocationIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </LocationIdentifier>
+        <!--Optional:-->
+        <LocationName >?</LocationName>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <!--1 or more repetitions:-->
+        <StockQuantityCoded>
+          <StockQuantityCodeType>?</StockQuantityCodeType>
+          <!--Optional:-->
+          <StockQuantityCodeTypeName >?</StockQuantityCodeTypeName>
+          <StockQuantityCode>?</StockQuantityCode>
+        </StockQuantityCoded>
+        <OnHand>?</OnHand>
+        <!--Optional:-->
+        <Proximity>?</Proximity>
+        <OnOrder>?</OnOrder>
+        <CBO>?</CBO>
+        <!--Zero or more repetitions:-->
+        <OnOrderDetail>
+          <OnOrder>?</OnOrder>
+          <!--Optional:-->
+          <Proximity>?</Proximity>
+          <ExpectedDate dateformat="?">?</ExpectedDate>
+        </OnOrderDetail>
+        <!--Zero or more repetitions:-->
+        <Velocity>
+          <VelocityMetric>?</VelocityMetric>
+          <Rate>?</Rate>
+          <!--Optional:-->
+          <Proximity>?</Proximity>
+        </Velocity>
+      </Stock>
+      <!--Optional:-->
+      <PackQuantity>?</PackQuantity>
+      <!--You have a CHOICE of the next 2 items at this level-->
+      <UnpricedItemType>?</UnpricedItemType>
+      <!--1 or more repetitions:-->
+      <Price>
+        <!--Zero or more repetitions:-->
+        <PriceIdentifier>
+          <PriceIDType>?</PriceIDType>
+          <!--Optional:-->
+          <IDTypeName >?</IDTypeName>
+          <IDValue>?</IDValue>
+        </PriceIdentifier>
+        <!--Optional:-->
+        <PriceType>?</PriceType>
+        <!--Optional:-->
+        <PriceQualifier>?</PriceQualifier>
+        <!--Zero or more repetitions:-->
+        <PriceTypeDescription >?</PriceTypeDescription>
+        <!--Optional:-->
+        <PricePer>?</PricePer>
+        <!--Zero or more repetitions:-->
+        <PriceCondition>
+          <PriceConditionType>?</PriceConditionType>
+          <!--Zero or more repetitions:-->
+          <PriceConditionQuantity>
+            <PriceConditionQuantityType>?</PriceConditionQuantityType>
+            <Quantity>?</Quantity>
+            <QuantityUnit>?</QuantityUnit>
+          </PriceConditionQuantity>
+          <!--Zero or more repetitions:-->
+          <ProductIdentifier>
+            <ProductIDType>?</ProductIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </ProductIdentifier>
+        </PriceCondition>
+        <!--Optional:-->
+        <MinimumOrderQuantity>?</MinimumOrderQuantity>
+        <!--Zero or more repetitions:-->
+        <BatchBonus>
+          <BatchQuantity>?</BatchQuantity>
+          <FreeQuantity>?</FreeQuantity>
+        </BatchBonus>
+        <!--Zero or more repetitions:-->
+        <DiscountCoded>
+          <DiscountCodeType>?</DiscountCodeType>
+          <!--Optional:-->
+          <DiscountCodeTypeName >?</DiscountCodeTypeName>
+          <DiscountCode>?</DiscountCode>
+        </DiscountCoded>
+        <!--Zero or more repetitions:-->
+        <Discount>
+          <!--Optional:-->
+          <DiscountType>?</DiscountType>
+          <Quantity>?</Quantity>
+          <!--Optional:-->
+          <ToQuantity>?</ToQuantity>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <DiscountPercent>?</DiscountPercent>
+          <!--Optional:-->
+          <DiscountAmount>?</DiscountAmount>
+        </Discount>
+        <!--Optional:-->
+        <PriceStatus>?</PriceStatus>
+        <!--You have a CHOICE of the next 2 items at this level-->
+        <PriceAmount>?</PriceAmount>
+        <PriceCoded>
+          <PriceCodeType>?</PriceCodeType>
+          <!--Optional:-->
+          <PriceCodeTypeName >?</PriceCodeTypeName>
+          <PriceCode>?</PriceCode>
+        </PriceCoded>
+        <Tax>
+          <!--Optional:-->
+          <TaxType>?</TaxType>
+          <!--Optional:-->
+          <TaxRateCode>?</TaxRateCode>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <TaxRatePercent>?</TaxRatePercent>
+          <!--Optional:-->
+          <TaxableAmount>?</TaxableAmount>
+          <!--Optional:-->
+          <TaxAmount>?</TaxAmount>
+        </Tax>
+        <!--Optional:-->
+        <CurrencyCode>?</CurrencyCode>
+        <Territory>
+          <CountriesIncluded>?</CountriesIncluded>
+          <RegionsIncluded>?</RegionsIncluded>
+          <CountriesExcluded>?</CountriesExcluded>
+          <RegionsExcluded>?</RegionsExcluded>
+        </Territory>
+        <!--Optional:-->
+        <CurrencyZone>?</CurrencyZone>
+        <!--Zero or more repetitions:-->
+        <ComparisonProductPrice>
+          <!--1 or more repetitions:-->
+          <ProductIdentifier>
+            <ProductIDType>?</ProductIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </ProductIdentifier>
+          <!--Optional:-->
+          <PriceType>?</PriceType>
+          <PriceAmount>?</PriceAmount>
+          <!--Optional:-->
+          <CurrencyCode>?</CurrencyCode>
+        </ComparisonProductPrice>
+        <!--Zero or more repetitions:-->
+        <PriceDate>
+          <PriceDateRole>?</PriceDateRole>
+          <!--Optional:-->
+          <DateFormat>?</DateFormat>
+          <Date dateformat="?">?</Date>
+        </PriceDate>
+        <!--Optional:-->
+        <PrintedOnProduct>?</PrintedOnProduct>
+        <!--Optional:-->
+        <PositionOnProduct>?</PositionOnProduct>
+      </Price>
+      <!--Optional:-->
+      <Reissue>
+        <ReissueDate dateformat="?">?</ReissueDate>
+        <!--Optional:-->
+        <ReissueDescription  >
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <block>?</block>
+          <inline>?</inline>
+        </ReissueDescription>
+        <!--Zero or more repetitions:-->
+        <Price>
+          <!--Zero or more repetitions:-->
+          <PriceIdentifier>
+            <PriceIDType>?</PriceIDType>
+            <!--Optional:-->
+            <IDTypeName >?</IDTypeName>
+            <IDValue>?</IDValue>
+          </PriceIdentifier>
+          <!--Optional:-->
+          <PriceType>?</PriceType>
+          <!--Optional:-->
+          <PriceQualifier>?</PriceQualifier>
+          <!--Zero or more repetitions:-->
+          <PriceTypeDescription >?</PriceTypeDescription>
+          <!--Optional:-->
+          <PricePer>?</PricePer>
+          <!--Zero or more repetitions:-->
+          <PriceCondition>
+            <PriceConditionType>?</PriceConditionType>
+            <!--Zero or more repetitions:-->
+            <PriceConditionQuantity>
+              <PriceConditionQuantityType>?</PriceConditionQuantityType>
+              <Quantity>?</Quantity>
+              <QuantityUnit>?</QuantityUnit>
+            </PriceConditionQuantity>
+            <!--Zero or more repetitions:-->
+            <ProductIdentifier>
+              <ProductIDType>?</ProductIDType>
+              <!--Optional:-->
+              <IDTypeName >?</IDTypeName>
+              <IDValue>?</IDValue>
+            </ProductIdentifier>
+          </PriceCondition>
+          <!--Optional:-->
+          <MinimumOrderQuantity>?</MinimumOrderQuantity>
+          <!--Zero or more repetitions:-->
+          <BatchBonus>
+            <BatchQuantity>?</BatchQuantity>
+            <FreeQuantity>?</FreeQuantity>
+          </BatchBonus>
+          <!--Zero or more repetitions:-->
+          <DiscountCoded>
+            <DiscountCodeType>?</DiscountCodeType>
+            <!--Optional:-->
+            <DiscountCodeTypeName >?</DiscountCodeTypeName>
+            <DiscountCode>?</DiscountCode>
+          </DiscountCoded>
+          <!--Zero or more repetitions:-->
+          <Discount>
+            <!--Optional:-->
+            <DiscountType>?</DiscountType>
+            <Quantity>?</Quantity>
+            <!--Optional:-->
+            <ToQuantity>?</ToQuantity>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <DiscountPercent>?</DiscountPercent>
+            <!--Optional:-->
+            <DiscountAmount>?</DiscountAmount>
+          </Discount>
+          <!--Optional:-->
+          <PriceStatus>?</PriceStatus>
+          <!--You have a CHOICE of the next 2 items at this level-->
+          <PriceAmount>?</PriceAmount>
+          <PriceCoded>
+            <PriceCodeType>?</PriceCodeType>
+            <!--Optional:-->
+            <PriceCodeTypeName >?</PriceCodeTypeName>
+            <PriceCode>?</PriceCode>
+          </PriceCoded>
+          <Tax>
+            <!--Optional:-->
+            <TaxType>?</TaxType>
+            <!--Optional:-->
+            <TaxRateCode>?</TaxRateCode>
+            <!--You have a CHOICE of the next 2 items at this level-->
+            <TaxRatePercent>?</TaxRatePercent>
+            <!--Optional:-->
+            <TaxableAmount>?</TaxableAmount>
+            <!--Optional:-->
+            <TaxAmount>?</TaxAmount>
+          </Tax>
+          <!--Optional:-->
+          <CurrencyCode>?</CurrencyCode>
+          <Territory>
+            <CountriesIncluded>?</CountriesIncluded>
+            <RegionsIncluded>?</RegionsIncluded>
+            <CountriesExcluded>?</CountriesExcluded>
+            <RegionsExcluded>?</RegionsExcluded>
+          </Territory>
+          <!--Optional:-->
+          <CurrencyZone>?</CurrencyZone>
+          <!--Zero or more repetitions:-->
+          <ComparisonProductPrice>
+            <!--1 or more repetitions:-->
+            <ProductIdentifier>
+              <ProductIDType>?</ProductIDType>
+              <!--Optional:-->
+              <IDTypeName >?</IDTypeName>
+              <IDValue>?</IDValue>
+            </ProductIdentifier>
+            <!--Optional:-->
+            <PriceType>?</PriceType>
+            <PriceAmount>?</PriceAmount>
+            <!--Optional:-->
+            <CurrencyCode>?</CurrencyCode>
+          </ComparisonProductPrice>
+          <!--Zero or more repetitions:-->
+          <PriceDate>
+            <PriceDateRole>?</PriceDateRole>
+            <!--Optional:-->
+            <DateFormat>?</DateFormat>
+            <Date dateformat="?">?</Date>
+          </PriceDate>
+          <!--Optional:-->
+          <PrintedOnProduct>?</PrintedOnProduct>
+          <!--Optional:-->
+          <PositionOnProduct>?</PositionOnProduct>
+        </Price>
+        <!--Zero or more repetitions:-->
+        <SupportingResource>
+          <ResourceContentType>?</ResourceContentType>
+          <!--1 or more repetitions:-->
+          <ContentAudience>?</ContentAudience>
+          <ResourceMode>?</ResourceMode>
+          <!--Zero or more repetitions:-->
+          <ResourceFeature>
+            <ResourceFeatureType>?</ResourceFeatureType>
+            <!--Optional:-->
+            <FeatureValue>?</FeatureValue>
+            <!--Zero or more repetitions:-->
+            <FeatureNote  >
+              <!--You have a CHOICE of the next 2 items at this level-->
+              <block>?</block>
+              <inline>?</inline>
+            </FeatureNote>
+          </ResourceFeature>
+          <!--1 or more repetitions:-->
+          <ResourceVersion>
+            <ResourceForm>?</ResourceForm>
+            <!--Zero or more repetitions:-->
+            <ResourceVersionFeature>
+              <ResourceVersionFeatureType>?</ResourceVersionFeatureType>
+              <!--Optional:-->
+              <FeatureValue>?</FeatureValue>
+              <!--Zero or more repetitions:-->
+              <FeatureNote  >
+                <!--You have a CHOICE of the next 2 items at this level-->
+                <block>?</block>
+                <inline>?</inline>
+              </FeatureNote>
+            </ResourceVersionFeature>
+            <!--1 or more repetitions:-->
+            <ResourceLink>?</ResourceLink>
+            <!--Zero or more repetitions:-->
+            <ContentDate>
+              <ContentDateRole>?</ContentDateRole>
+              <!--Optional:-->
+              <DateFormat>?</DateFormat>
+              <Date dateformat="?">?</Date>
+            </ContentDate>
+          </ResourceVersion>
+        </SupportingResource>
+      </Reissue>
+    </SupplyDetail>
+  </ProductSupply>
+</Product>

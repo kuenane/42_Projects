@@ -1,0 +1,224 @@
+$produit = 'sample_product';
+
+%product =
+(
+  'pro_tmp'      => 'sample_product',
+  'protmp'       => 'sampleproduct',
+  'PRO_TMP'      => 'SAMPLE_PRODUCT',
+  'PROTMP'       => 'SAMPLEPRODUCT',
+);
+
+@cfgdef =
+(
+);
+
+@busdef =
+(
+  ['ProductIdentifier', 'O', '', [
+    ['ProductIDType', 'Z' ],
+    ['IDValue', 'Z' ],
+  ]],
+  ['DescriptiveDetail', 'V', '', [
+    ['ProductFormDetail', 'P', '', 'Z' ],
+    ['EpubTechnicalProtection', 'P', '', 'Z' ],
+    ['EpubUsageConstraint', 'O', '', [
+      ['EpubUsageType', 'Z' ],
+      ['EpubUsageStatus', 'Z' ],
+    ]],
+    ['Collection', 'O', '', [
+      ['CollectionType', 'Z' ],
+      ['CollectionIdentifier', 'O', '', [
+        ['CollectionIDType', 'Z' ],
+        ['IDValue', 'Z' ],
+      ]],
+      ['TitleDetail', 'O', '', [
+        ['TitleType', 'Z' ],
+        ['TitleElement', 'O', '', [
+          ['TitleElementLevel', 'Z' ],
+          ['TitleText', 'V', '', [
+            ['content', 'Z' ],
+            ['textcase', 'Z' ],
+          ]],
+        ]],
+      ]],
+      ['Contributor', 'O', '', [
+        ['SequenceNumber', 'Z' ],
+        ['ContributorRole', 'P', '', 'Z' ],
+        ['PersonName', 'Z' ],
+        ['PersonNameInverted', 'Z' ],
+        ['NamesBeforeKey', 'Z' ],
+        ['KeyNames', 'Z' ],
+      ]],
+    ]],
+    ['NoCollection', 'Z' ],
+    ['TitleDetail', 'O', '', [
+      ['TitleType', 'Z' ],
+      ['TitleElement', 'V', '', [
+        ['TitleElementLevel', 'Z' ],
+        ['TitleText', 'V', '', [
+          ['content', 'Z' ],
+          ['textcase', 'Z' ],
+        ]],
+      ]],
+    ]],
+    ['Contributor', 'V', '', [
+      ['SequenceNumber', 'Z' ],
+      ['ContributorRole', 'P', '', 'Z' ],
+      ['PersonName', 'Z' ],
+      ['PersonNameInverted', 'Z' ],
+      ['NamesBeforeKey', 'Z' ],
+      ['KeyNames', 'Z' ],
+    ]],
+    ['Language', 'O', '', [
+      ['LanguageRole', 'Z' ],
+      ['LanguageCode', 'Z' ],
+    ]],
+    ['Extent', 'O', '', [
+      ['ExtentType', 'Z' ],
+      ['ExtentValue', 'Z' ],
+      ['ExtentUnit', 'Z' ],
+    ]],
+    ['Subject', 'O', '', [
+      ['SubjectSchemeIdentifier', 'Z' ],
+      ['SubjectSchemeVersion', 'Z' ],
+      ['SubjectCode', 'Z' ],
+      ['SubjectHeadingText', 'P', '', 'Z' ],
+    ]],
+  ]],
+  ['CollateralDetail', 'V', '', [
+    ['TextContent', 'O', '', [
+      ['TextType', 'Z' ],
+      ['ContentAudience', 'P', '', 'Z' ],
+      ['Text', 'O', '', [
+        ['textformat', 'Z' ],
+      ]],
+    ]],
+    ['SupportingResource', 'O', '', [
+      ['ResourceContentType', 'Z' ],
+      ['ContentAudience', 'P', '', 'Z' ],
+      ['ResourceMode', 'Z' ],
+      ['ResourceVersion', 'O', '', [
+        ['ResourceForm', 'Z' ],
+        ['ResourceLink', 'P', '', 'Z' ],
+        ['ContentDate', 'O', '', [
+          ['ContentDateRole', 'Z' ],
+          ['DateFormat', 'Z' ],
+          ['Date', 'V', '', [
+            ['content', 'Z' ],
+          ]],
+        ]],
+      ]],
+    ]],
+    ['Prize', 'O', '', [
+      ['PrizeName', 'P', '', 'Z' ],
+    ]],
+  ]],
+  ['PublishingDetail', 'V', '', [
+    ['Publisher', 'O', '', [
+      ['PublishingRole', 'Z' ],
+      ['PublisherIdentifier', 'O', '', [
+        ['PublisherIDType', 'Z' ],
+        ['IDValue', 'Z' ],
+      ]],
+      ['PublisherName', 'Z' ],
+      ['Website', 'O', '', [
+        ['WebsiteRole', 'Z' ],
+        ['WebsiteLink', 'Z' ],
+      ]],
+    ]],
+    ['PublishingDate', 'O', '', [
+      ['PublishingDateRole', 'Z' ],
+      ['DateFormat', 'Z' ],
+      ['Date', 'V', '', [
+        ['content', 'Z' ],
+      ]],
+    ]],
+    ['SalesRights', 'O', '', [
+      ['SalesRightsType', 'Z' ],
+      ['Territory', 'V', '', [
+        ['CountriesIncluded', 'Z' ],
+        ['RegionsIncluded', 'Z' ],
+        ['CountriesExcluded', 'Z' ],
+        ['RegionsExcluded', 'Z' ],
+      ]],
+    ]],
+  ]],
+  ['RelatedMaterial', 'V', '', [
+    ['RelatedProduct', 'O', '', [
+      ['ProductRelationCode', 'P', '', 'Z' ],
+      ['ProductIdentifier', 'O', '', [
+        ['ProductIDType', 'Z' ],
+        ['IDValue', 'Z' ],
+      ]],
+    ]],
+  ]],
+  ['ProductSupply', 'O', '', [
+    ['Market', 'O', '', [
+      ['Territory', 'V', '', [
+      ]],
+    ]],
+    ['MarketPublishingDetail', 'V', '', [
+      ['PublisherRepresentative', 'O', '', [
+        ['AgentIdentifier', 'O', '', [
+          ['AgentIDType', 'Z' ],
+          ['IDValue', 'Z' ],
+        ]],
+        ['AgentName', 'Z' ],
+      ]],
+      ['MarketPublishingStatus', 'Z' ],
+      ['MarketDate', 'O', '', [
+        ['MarketDateRole', 'Z' ],
+        ['DateFormat', 'Z' ],
+        ['Date', 'V', '', [
+          ['content', 'Z' ],
+        ]],
+      ]],
+    ]],
+    ['SupplyDetail', 'O', '', [
+      ['Supplier', 'V', '', [
+        ['SupplierRole', 'Z' ],
+        ['SupplierIdentifier', 'O', '', [
+          ['SupplierIDType', 'Z' ],
+          ['IDValue', 'Z' ],
+        ]],
+        ['SupplierName', 'Z' ],
+      ]],
+      ['ProductAvailability', 'Z' ],
+      ['SupplyDate', 'O', '', [
+        ['SupplyDateRole', 'Z' ],
+        ['DateFormat', 'Z' ],
+        ['Date', 'V', '', [
+          ['content', 'Z' ],
+        ]],
+      ]],
+      ['UnpricedItemType', 'Z' ],
+      ['Price', 'O', '', [
+        ['PriceType', 'Z' ],
+        ['PriceQualifier', 'Z' ],
+        ['PriceAmount', 'Z' ],
+        ['Tax', 'V', '', [
+          ['TaxRateCode', 'Z' ],
+          ['TaxRatePercent', 'Z' ],
+          ['TaxAmount', 'Z' ],
+        ]],
+        ['CurrencyCode', 'Z' ],
+        ['Territory', 'V', '', [
+          ['CountriesIncluded', 'Z' ],
+          ['RegionsIncluded', 'Z' ],
+          ['CountriesExcluded', 'Z' ],
+          ['RegionsExcluded', 'Z' ],
+        ]],
+      ]],
+    ]],
+  ]],
+);
+
+@session =
+(
+);
+
+@context = 
+(
+);
+
+1;

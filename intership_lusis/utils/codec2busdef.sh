@@ -17,19 +17,31 @@ XSLT_TO_APPLY="<?xml version=\"1.0\" encoding=\"UTF-8\"?>
             <xsl:text>['</xsl:text>
             <xsl:value-of select=\"@name\"/>
             <xsl:text>', 'V', '', [&#10;</xsl:text>
+            <xsl:if test=\"@valToField = 'content'\">
+              <xsl:text>['content', 'Z' ],&#10;</xsl:text>
+            </xsl:if>
             <xsl:if test=\"./@*\">
               <xsl:apply-templates/>
             </xsl:if>
             <xsl:text>]],&#10;</xsl:text>
           </xsl:when>
           <xsl:when test=\"@occ\">
-            <xsl:text>['</xsl:text>
-            <xsl:value-of select=\"@name\"/>
-            <xsl:text>', 'O', '', [&#10;</xsl:text>
-            <xsl:if test=\"./@*\">
-              <xsl:apply-templates/>
-            </xsl:if>
-            <xsl:text>]],&#10;</xsl:text>
+            <xsl:choose>
+              <xsl:when test=\"child::*\">
+                <xsl:text>['</xsl:text>
+                <xsl:value-of select=\"@name\"/>
+                <xsl:text>', 'O', '', [&#10;</xsl:text>
+                <xsl:if test=\"./@*\">
+                  <xsl:apply-templates/>
+                </xsl:if>
+                <xsl:text>]],&#10;</xsl:text>         
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:text>['</xsl:text>
+                <xsl:value-of select=\"@name\"/>
+                <xsl:text>', 'P', '', 'Z' ],&#10;</xsl:text>
+              </xsl:otherwise>
+            </xsl:choose>
           </xsl:when>
           <xsl:otherwise>
             <xsl:text>['</xsl:text>
@@ -97,14 +109,10 @@ if [ "$FULLDESCOPTION" = 1 ]; then
 
 %product =
 (
-  'Pro_tmp'      => '$PNAME_LOW',
-  'Protmp'       => '$PNAME_LOW_NOUNDERSCORE',
+  'pro_tmp'      => '$PNAME_LOW',
+  'protmp'       => '$PNAME_LOW_NOUNDERSCORE',
   'PRO_TMP'      => '$PNAME_UP',
   'PROTMP'       => '$PNAME_UP_NOUNDERSCORE',
-  'auteur'       => '`whoami`',
-  'V0X.XX'       => 'V01_00',
-  'V0Y.YY'       => 'V01_00',
-  'AAAA/MM/JJ a HH:MM:SS'       => '`date +%Y/%m/%d`',
 );
 
 @cfgdef =

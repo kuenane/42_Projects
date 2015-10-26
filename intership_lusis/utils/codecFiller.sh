@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ "$#" -ne 3 ]; then
-	echo "usage: codecFiller.sh specTree codec outfile"	
+	echo "usage: codecFiller.sh busFieldPath codec outfile"	
 	exit 1
 fi	
 if [ ! -f "$1" ]; then
-	echo "error: specTree file not found"
+	echo "error: busFieldPath file not found"
 	exit 1
 fi
 if [ ! -f "$2" ]; then
