@@ -12,7 +12,5 @@
 
 int		ft_abs(int a)
 {
-	if (a > 0)
-		return (a);
-	return (-a);
+	return ((a > 0) a : -a);
 }
