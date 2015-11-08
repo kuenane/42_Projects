@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/07/14 11:09:51 by wide-aze         ###   ########.fr       */
+/*   Updated: 2015/10/27 08:22:55 by wide-aze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -175,5 +175,9 @@ void				ft_quicksort_str(char **tab, int start, int end);
 void				ft_quicksort_str_dsc(char **tab, int start, int end);
 void				ft_srand(void);
 int					*v_inttabnew(int nb);
+int					ft_putstr_ret(const char *msg, int toreturn);
+int					ft_putstr_fd_ret(const char *msg, int fd, int toreturn);
+int					ft_putendl_ret(const char *msg, int toreturn);
+int					ft_putendl_fd_ret(const char *msg, int fd, int toreturn);
 
 #endif
