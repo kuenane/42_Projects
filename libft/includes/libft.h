@@ -6,7 +6,7 @@
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:14:50 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/10/27 08:22:55 by wide-aze         ###   ########.fr       */
+/*   Updated: 2016/02/13 02:00:18 by dw31             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,5 +179,6 @@ int					ft_putstr_ret(const char *msg, int toreturn);
 int					ft_putstr_fd_ret(const char *msg, int fd, int toreturn);
 int					ft_putendl_ret(const char *msg, int toreturn);
 int					ft_putendl_fd_ret(const char *msg, int fd, int toreturn);
+char				*v_replace_free2(char *old, char *new, t_bool fnew);
 
 #endif

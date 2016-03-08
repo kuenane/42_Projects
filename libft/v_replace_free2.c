@@ -1,16 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_min.c                                           :+:      :+:    :+:   */
+/*   v_replace_free2.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wide-aze <wide-aze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/06/08 09:01:20 by wide-aze          #+#    #+#             */
-/*   Updated: 2015/11/30 21:46:07 by wide-aze         ###   ########.fr       */
+/*   Created: 2015/06/13 19:03:18 by wide-aze          #+#    #+#             */
+/*   Updated: 2016/02/14 09:42:31 by dw31             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_min(int a, int b)
+#include <libft.h>
+
+char	*v_replace_free2(char *old, char *new, t_bool fnew)
 {
-	return ((a <= b) ? a : b);
+	char	*tmp;
+
+	tmp = v_strdup(new);
+	ft_free(old);
+	if (fnew)
+		ft_free(new);
+	return (tmp);
 }
