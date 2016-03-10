@@ -1,0 +1,3 @@
+# Quelle commande permet de renommer votre système ?
+
+hostname [name-of-host]

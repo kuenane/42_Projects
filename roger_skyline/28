@@ -1,0 +1,3 @@
+# Quelle commande permet de lister les tables de partitions des périphérique ?
+
+diskutil list OU fdisk -l

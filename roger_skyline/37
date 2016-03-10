@@ -1,0 +1,5 @@
+# Avec la commande précédente, interdisez le reste
+
+/usr/libexec/ApplicationFirewall/socketfilterfw -setblockall on
+OU
+iptables -P INPUT DROP && iptables -P FORWARD DROP

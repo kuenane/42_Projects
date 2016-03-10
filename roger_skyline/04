@@ -1,0 +1,3 @@
+# Identifiez la gateway par défaut dans la table de routage
+
+netstat -r | grep default

@@ -1,0 +1,7 @@
+# Déterminez l’état du service SSH
+
+sudo service ssh status
+(not on os x...)
+
+launchctl list | grep ssh 
+(os x version, if '-' its disabled else its the pid)

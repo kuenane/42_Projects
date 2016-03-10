@@ -1,0 +1,3 @@
+# Trouvez la commande qui permet de trouver les processus en cours d’exécution
+
+top OU ps x

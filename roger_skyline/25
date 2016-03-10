@@ -1,0 +1,4 @@
+# Déterminez le PID du service SSHD
+
+launchctl list | grep ssh 
+(pas démarré donc pas de pid...)

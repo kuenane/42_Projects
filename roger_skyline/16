@@ -1,0 +1,3 @@
+# Trouvez la commande permettant de lister les paquets réseau parcourant votre machine
+
+tcpdump (mais droits root requis...)

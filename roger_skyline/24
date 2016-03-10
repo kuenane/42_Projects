@@ -1,0 +1,4 @@
+# Donnez la commande pour le redémarrer
+
+sudo service ssh restart
+(not on os x...)

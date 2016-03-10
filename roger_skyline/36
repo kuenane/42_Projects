@@ -1,0 +1,5 @@
+# Avec la commande précédente, autorisez uniquement les IPs provenant de 10.0.0.0/8 à se connecter sur votre système
+
+/usr/libexec/ApplicationFirewall/socketfilterfw -a 10.0.0.0/8
+OU
+iptables -A INPUT -j ACCEPT -s 10.0.0.0/8

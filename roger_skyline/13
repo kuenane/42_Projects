@@ -1,0 +1,3 @@
+# Listez les ports ouverts sur ce serveur
+
+nmap 10.51.1.253 (nmap absent sur os x...)

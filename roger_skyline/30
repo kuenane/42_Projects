@@ -1,0 +1,4 @@
+# Déterminez la taille exacte de chaque dossier de /var
+
+du -hPd 1 /var
+(use /private/var in os x)

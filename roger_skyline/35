@@ -1,0 +1,3 @@
+# Trouvez la commande qui donne la liste des règles de pare-feu
+
+/usr/libexec/ApplicationFirewall/socketfilterfw -L OU iptables -L

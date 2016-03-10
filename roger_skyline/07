@@ -1,0 +1,3 @@
+# Interrogez un serveur DNS externe sur le même nom de domaine (ex : google 8.8.8.8)
+
+nslookup slash16.org | grep Address | grep -v "#" | cut -d " " -f2

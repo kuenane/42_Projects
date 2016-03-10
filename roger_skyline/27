@@ -1,0 +1,3 @@
+# Quelle commande permet de savoir quelles personnes sont connectées sur le système ?
+who
+(seulement l'username et unique -> who | cut -d " " -f 1 | uniq )
