@@ -1,0 +1,15 @@
+class className param1 =
+object
+	initializer print_endline "do some stuff in initialization"
+	val _name:string = param1
+	val mutable _money = 0
+	val private _toto:int = 42
+	method earnMoney n = _money <- n
+end
+
+let instanceName = new className
+
+className#earnMoney 42
+
+// self, use it like self#methodCall and declare it in objet (self)
+methode overd a = [< _x = _x + a >] //return new instance but can be used with new

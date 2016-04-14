@@ -1,0 +1,19 @@
+-functor = function between 2 modules
+
+-//functor signature
+	module type MAKEINT =
+		functor (Int:int) -> int
+
+-//functor 
+	module MakeInt:MAKEINT = functor (Int:int) ->
+	struct
+		(Int + Int)
+	end
+
+-//functor params are always between ()
+
+-//functor must be fully written
+	val add : fun x -> fun y -> x + y (instead of add x y = x + y) 
+
+- with type toto = int //precise type
+- with type toto := int //replace type

@@ -1,0 +1,19 @@
+-interface = mli file (is in .mli = is public)
+	'val toto:int' for export interface type (like type toto=int)
+	'val my_ft:unit->unit' same for functions
+-----------------------------------------------
+-modules:
+	module moduleName = (or module moduleName : SIGNAME =)
+		struct
+			let toto =toto
+			let titi = titi
+		end
+----------------------------------------------
+-signatures
+	module type SIGNAME =
+	sig
+		let toto:string
+	end
+---------------------------------------------
+'include ModuleName' is like inherit
+

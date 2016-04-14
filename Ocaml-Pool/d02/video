@@ -1,0 +1,28 @@
+match x with
+	| valueToMatch -> actionToDo
+	| _ -> actionForDefaultCase
+	| valueToMatch1 | valueToMatch2 | rangeBegin .. rangeEnd -> actionTodo
+	| y when y > 0 && y < 100 -> actionToDo
+---------------------------------------------
+type foo = int
+let a:foo = 3
+
+type foo = int -> int
+let incr:foo = + 1
+--------------------------------------------
+let tuple = ("foo", 42, true) //type-> str*int*bool
+let toto x = match x with
+	| ("foot", 42, false) -> toDo
+	| (_, _, _) -> actionToDo
+-------------------------------------------
+let list = 1::2::[3;4]
+ 
+match x with
+	| tete::suite::queue -> tete + suite //decompose liste et renvoi 1er+2nd 
+-------------------------------------------
+type card = As | King | Queen //variant
+type toto = As of int
+-------------------------------------------
+type etudiant = {nom:string;login:string;etat:string} print_endline toto.nom
+-------------------------------------------
+type int_option = Some of int | None //but is pervasive

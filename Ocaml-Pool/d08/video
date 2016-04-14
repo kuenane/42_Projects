@@ -1,0 +1,11 @@
+-inherit className
+	//last class inherited is the last method called if few sames
+
+-class virtual className
+	object
+		method virtual print n //define pure function (+virtual in class)
+	end
+
+type nomType = <m1:unit ; m2:unit> //interface
+
+cohersion is operator :>

@@ -1,0 +1,8 @@
+-interpret: #load libraryName / #quit
+-compil: ocamlc/ocamlopt/ocamlc.opt/ocamlopt.opt
+- access ft other file -> filename.func
+- 'ignore(expression)' = ignore the expression return value (=unit)
+- brew install open && opam init && eval `opam config env`
+	opam install x
+- cmi=interface cmo=object_bt cmx=native_optimisation
+- Sys.argv //array

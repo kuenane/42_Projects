@@ -1,0 +1,22 @@
+Turn-in directory : ex00/
+Files to turn in : *.ml, Makefile
+Forbidden functions : None
+Remarks : n/a
+
+You will write a virtual class named atom for...an atom. Today we’re doing some chemistry! An atom is defined by a few things:
+	• A name, of type string.
+	• A symbol, of type string.
+	• An atomic_number, of type int.
+
+All these things have to be methods, and you have to be able to set what they return through the atom’s constructor. Of course, feel free to look up what an atom is if you don’t understand what these are.
+Your class will contain at least a to_string method to describe shortly what your atom is, and an equals method to compare atoms; aside from that, you can implement anything you think is suitable or you may need in the next exercises.
+To go along with your atom virtual class, you will also write some real atoms, which will of course inherit your atom class. You have to write at least the following classes:
+	• hydrogen
+	• carbon
+	• oxygen
+	• And three more atoms of your choice, as long as they really exist.
+
+!!!!!!!!!
+Bonus points if you write more atoms.  Learning important atoms is
+good for you.
+!!!!!!!!
