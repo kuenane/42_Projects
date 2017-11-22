@@ -17,82 +17,77 @@ Discovered C++ language during two massives weeks (C++)
 
 #### docker
 ```
--
+Some DockerFiles
 ```
 
 #### dr_quine
 ```
--
+Virus learning: self-replicating programs and Kleene's algorithm (C, Python)
 ```
 
 #### fdf
 ```
--
+3d wire-frame representation (C, X11)
 ```
 
 #### filler
 ```
--
+AI for a board game (C)
 ```
 
 #### fillit
 ```
--
+Tetris pieces sorting
 ```
 
 #### fractol
 ```
--
+Fractal exploration project (C, X11)
 ```
 
 #### framework0
 ```
--
+Discovered SILEX web framework
 ```
 
 #### ft_gkrellm
 ```
--
+Resources monitor (C++, Ncurse, SFML)
 ```
 
 #### ft_ls
 ```
--
+Fork of ls shell command (C)
 ```
 
 #### ft_minishell1
 ```
--
-```
-
-#### ft_minishell2_NOT_FINISHED
-```
--
+My own shell (C)
 ```
 
 #### ft_minishop
 ```
--
+Mini e-commerce website in 48h (PHP MYSQL HTML CSS JS)
 ```
 
 #### ft_p
 ```
--
+FTP Client/Server (C)
 ```
 
 #### ft_printf
 ```
--
+Fork of printf C function
 ```
 
 #### ft_retro
 ```
--
+Shoot-them-up game with Ncurses
 ```
 
 #### ft_script
 ```
--
+Fork of script shell command (C)
 ```
 
 #### ft_select
@@ -163,7 +158,6 @@ Sorting stack solver (C)
 #### Reloaded_Pool
 ```
 Mini and basics projects (C)
-
 ```
 
 #### roger_skyline
