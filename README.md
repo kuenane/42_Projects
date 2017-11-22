@@ -37,7 +37,7 @@ AI for a board game (C)
 
 #### fillit
 ```
-Tetris pieces sorting
+Tetris pieces sorting (C)
 ```
 
 #### fractol
@@ -77,7 +77,7 @@ FTP Client/Server (C)
 
 #### ft_ping
 ```
-Fork of ping shell command
+Fork of ping shell command (C)
 ```
 
 #### ft_printf
@@ -97,7 +97,7 @@ Fork of script shell command (C)
 
 #### ft_select
 ```
-Simple termcaps usage
+Simple termcaps usage (C)
 ```
 
 #### gnl
@@ -122,7 +122,7 @@ Wave toolkit: edit/crop/cut... .WAV files (C)
 
 #### lem_in
 ```
-Graph theory in C
+Graph theory exploration (C)
 ```
 
 #### libft
