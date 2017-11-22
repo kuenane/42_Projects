@@ -1,0 +1,88 @@
+-----------
+-- BONUS --
+-----------
+
+option -t ttl
+option -W timeout on each packet
+option -w deadline
+
+
+
+-----------
+--- DOC ---
+-----------
+
+-icmp request/response: Internet Control Message Protocol, contains icmp_header + icmp_data
+     HEADER 42bytes: type(8=req 0=resp) + code + checksum + id + seqNb(to link req with resp)
+     DATA 56bytes: (total = 42+56 = 98bytes)
+
+-RTT = Round Trip Time in ms (total time, go and back)
+    
+-packet loss = packet declared destroyed or not returned after timeout (default = 2s?)
+
+-ttl = time-to-live
+  decremented each time a machine is travelled (-1 for router / -128 for windows / -192 for linux)
+  when its zero, the packet is destroyed (to avoid infinites loops)
+  def=255 min=1 max=255 store as unsigned long int  
+  in cli, value is just after the -t or in next arg
+
+-mdev = median deviation
+
+-w = general deadline
+  will leave the ping like a ctrl-c (send signal?)
+  def+0+undefined=disabled min=1 max=nomax store as long long int (<0=error 0/undefined=ignored)
+  in cli, value is just after the -t or in next arg
+
+-W = timeout between each packets
+    do like if the packet is lost after W seconds
+    def/undefined=2s min=0 max=2147 invalid_int=error
+
+/!\ ALL NON RECOGNIZED WORDS AS TAKEN AS IP
+
+
+
+--- ALLOWED FUNCTIONS ---
+
+[inet_ntop] convert IPv4 and IPv6 addresses from binary to text form
+[inet_pton] - convert IPv4 and IPv6 addresses from text form to binary
+[alarm(unsigned int seconds)] - set an alarm to send SIGALRM (already good handled). Auto-cancel previous if new set. Call it with 0 to cancel alarm.
+[socket] - int socket(int domain, int type, int protocol); domain=AF_INET (ipv4) type=SOCK_RAW (raw network protocol) protocol=0
+[setsockopt] - get and set options on sockets
+[sendto] - send msg on socket (using msghdr struct)
+[recvmsg] - read msg on socket (using msghdr struct)
+¶ getpid.
+¶ getuid.
+¶ getaddrinfo. 
+¶ gettimeofday. 
+¶ inet_ntop.
+¶ inet_pton.
+¶ exit.
+¶ signal.
+¶ alarm.
+¶ setsockopt.
+¶ recvmsg.
+¶ sendto.
+¶ socket.
+¶ les fonctions de la famille printf.
+¶ les fonctions libft(read, write, malloc, free...)
+
+
+
+
+--- ALGO ---
+
+BEFORE ALL
+    getaddr
+    socket
+    socketopt
+    inetntop
+   
+INFINITE LOOP
+    msghdr
+    gettimeofday
+    sendto
+    recvfrom
+    gettimeofday
+    print msg
+    ft_sleep(1)
+

