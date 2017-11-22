@@ -2,17 +2,17 @@
 
 #### abstract_vm
 ```
--
+Abstract virtual Machine which execute some basic ASM code (C++)
 ```
 
 #### computorv1
 ```
--
+Polynomial equations solver (PHP)
 ```
 
 #### CPP-Pool
 ```
--
+Discovered C++ language during two massives weeks (C++)
 ```
 
 #### docker
@@ -97,90 +97,86 @@
 
 #### ft_select
 ```
--
+Simple termcaps usage
 ```
 
 #### gnl
 ```
--
-```
-
-#### internship_lusis
-```
--
+Simple C function to get a line
 ```
 
 #### introduction_to_ios
 ```
--
+Discovered Swift during 48h (Swift, XCode, C#)
 ```
 
 #### introduction_to_wordpress
 ```
--
+Discovered wordpress during 48h (Wordpress, MYSQL, PHP, MAMP)
 ```
 
 #### l2info_wave
 ```
--
+Wave toolkit: edit/crop/cut... .WAV files (C)
 ```
 
 #### lem_in
 ```
--
+Graph theory in C
 ```
 
 #### libft
 ```
--
+My own C library
 ```
 
 #### libftasm
 ```
--
+My own ASM library
 ```
 
 #### Ocaml-Pool
 ```
--
+Discovered Ocaml language during two massives weeks
 ```
 
 #### philosophers
 ```
--
+Multi-thread IA: the famous 'Dining philosophers problem', google it! (C, X11)
 ```
 
 #### PHP-Pool
 ```
--
+Discovered PHP language during two massives weeks (PHP HTML CSS JS MYSQL)
 ```
 
 #### prolog
 ```
--
+Discovered Prolog language during 48h
 ```
 
 #### push_swap
 ```
--
+Sorting stack solver (C)
 ```
 
 #### Reloaded_Pool
 ```
--
+Mini and basics projects (C)
+
 ```
 
 #### roger_skyline
 ```
--
+Sys-Admin exercices during Slash16 partnership
 ```
 
 #### wolf3d
 ```
--
+Wolfenstein game with raycasting method (C, X11)
 ```
 
 #### wong_kar_wai
 ```
--
+Fork of 2048 game in 48h (C, Ncurse)
 ```
